@@ -1,0 +1,23 @@
+---
+title: “Open in Terminal” – Nautilus do fedora
+author: Cezar Cruz
+type: post
+date: 2017-04-19T00:47:44+00:00
+url: /open-in-terminal-nautilus-do-fedora/
+dsq_needs_sync:
+  - 1
+categories:
+  - Outros
+
+---
+Olas,
+
+Para habilitar esta funcionalidade no nautilus do Fedora eh muito simples, basta rodar os comandos abaixo:
+  
+`sudo dnf install nautilus-open-terminal`
+
+Apos isto, basta reiniciar o nautilius, e quando clicar com o botão direito do mouse, a opção &#8220;Open in terminal&#8221; estará disponível:
+  
+`killall nautilus`
+
+Prontinho! =)

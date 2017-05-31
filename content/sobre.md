@@ -1,10 +1,9 @@
 ---
 title: Sobre
 author: Cezar Cruz
-type: page
 date: 2013-06-13T12:06:14+00:00
-
 ---
+
 Olá, seja bem vindo ao meu Blog.
 
 <p lang="zxx">

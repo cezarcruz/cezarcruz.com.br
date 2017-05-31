@@ -1,3 +1,5 @@
 baseURL = "http://cezarcruz.com.br/"
-languageCode = "pt-br"
+languageCode = "pt-BR"
 title = "Blog do Cezar"
+theme = "cezar-blog"
+paginate = 10

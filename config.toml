@@ -4,5 +4,4 @@ title = "Blog do Cezar"
 theme = "hugo-theme-minos"
 
 [params]
-    googleAnalytics = "UA-37762884-1"
-    smartToc = true
+    googleAnalytics = "UA-37762884-1"    

@@ -1,4 +1,4 @@
-baseURL = "http://cezarcruz.com.br/"
+baseURL = "https://cezarcruz.com.br/"
 languageCode = "pt-BR"
 title = "Blog do Cezar"
 theme = "hugo-theme-minos"

@@ -1,0 +1,19 @@
+{{ partial "head.html" . }}
+<body>
+<div id="container">
+    {{ partial "header.html" . }}
+    <section id="main" class="outer">
+        <p style="margin: 1em 0em">A pagina solicitada não foi encontrada, tente realizar uma busca:</p>
+        <form method="get" id="search" action="https://duckduckgo.com/">
+            <input type="hidden" name="sites" value="https://cezarcruz.com.br"/>
+            <input type="hidden" name="k8" value="#444444"/>
+            <input type="hidden" name="k9" value="#D51920"/>
+            <input type="hidden" name="kt" value="h"/>
+            <input type="text" name="q" maxlength="255" placeholder="Buscar&hellip;"/>
+            <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+        </form>
+    </section>
+    {{ partial "footer.html" . }}
+</div>
+</body>
+</html>

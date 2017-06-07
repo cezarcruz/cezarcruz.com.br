@@ -64,8 +64,9 @@ Espero que ajude, abraços!
 
 **Referencias**
 
-[https://toddmotto.com/exploring-the-angular-1-5-component-method/
+[https://toddmotto.com/exploring-the-angular-1-5-component-method/][1]
   
-https://docs.angularjs.org/guide/component][1]
+[https://docs.angularjs.org/guide/component][2]
 
- [1]: https://docs.angularjs.org/guide/component
+[1]: https://toddmotto.com/exploring-the-angular-1-5-component-method/
+[2]: https://docs.angularjs.org/guide/component

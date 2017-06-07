@@ -7,7 +7,7 @@
         {{ end }}
         <div class="article-meta">
             <a href="{{ .RelPermalink }}" class="article-date">
-                <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
+                <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "02/01/2006" }}</time>
             </a>
             {{ $Site := .Site }}
             {{ if .Params.categories }}

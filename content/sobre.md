@@ -2,6 +2,7 @@
 title: Sobre
 author: Cezar Cruz
 date: 2013-06-13T12:06:14+00:00
+menu: "main"
 ---
 
 Olá, seja bem vindo ao meu Blog.

@@ -93,7 +93,7 @@ input,
 button {
     margin: 0;
     padding: 0;
-    font: 16px 'Ubuntu', 'Segoe UI', serif;
+    font: 16px 'Ubuntu', 'Segoe UI', 'Droid Sans', serif;
 }
 input::-moz-focus-inner,
 button::-moz-focus-inner {
@@ -107,7 +107,7 @@ body,
 }
 body {
     background: #fff;
-    font: 16px 'Ubuntu', 'Segoe UI', serif;
+    font: 16px 'Ubuntu', 'Segoe UI', 'Droid Sans', serif;
     -webkit-text-size-adjust: 100%;
 }
 .outer {
@@ -177,7 +177,7 @@ a.article-title,
 .tag-cloud a {
     color: #111;
     text-decoration: none;
-    border-bottom: 1px dotted transparent;
+    border-bottom: 1px solid transparent;
 }
 .article-meta a:hover,
 a.article-title:hover,
@@ -196,7 +196,7 @@ a.article-title:hover,
     border-bottom-color: #000;
 }
 .article-entry a {
-    border-bottom: 1px dotted #000;
+    text-decoration: none;
 }
 .article-entry h1 {
     font-size: 2em;
@@ -501,7 +501,7 @@ a.article-title:hover,
     padding: 10px 0;
 }
 .article-entry blockquote {
-    font-family: 'Ubuntu', 'Segoe UI', serif;
+    font-family: 'Ubuntu', 'Segoe UI', 'Droid Sans', serif;
     font-size: 1.4em;
     margin: 1.4em 20px;
     text-align: center;
@@ -1079,12 +1079,12 @@ pre .php .xml {
 .fancybox-skin {
     padding: 0 !important;
     border-radius: 0;
-    font-family: 'Ubuntu', 'Segoe UI', serif;
+    font-family: 'Ubuntu', 'Segoe UI', 'Droid Sans', serif;
 }
 .fancybox-skin .fancybox-title .child {
     background: none;
     font-weight: 400;
     font-size: 16px;
-    font-family: 'Ubuntu', 'Segoe UI', serif;
+    font-family: 'Ubuntu', 'Segoe UI', 'Droid Sans', serif;
     text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
 }

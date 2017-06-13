@@ -317,9 +317,6 @@ a.article-title:hover,
     font-size: 16px;
     margin-left: -15px;    
 }
-#main-nav-toggle:before {
-    content: "\f0c9";
-}
 @media screen and (max-width: 839px) {
     #main-nav-toggle {
         display: block;
@@ -331,7 +328,7 @@ a.article-title:hover,
 @media screen and (max-width: 839px) {
     #logo {
         float: none;
-        margin: 0 auto;
+        margin: 10px auto;
         display: block;
         background-position: center;
     }
@@ -1087,4 +1084,18 @@ pre .php .xml {
     font-size: 16px;
     font-family: 'Ubuntu', 'Segoe UI', 'Droid Sans', serif;
     text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.main-nav-toggle {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
 }

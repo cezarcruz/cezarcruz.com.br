@@ -5,3 +5,4 @@ theme = "hugo-theme-minos"
 
 [params]
     googleAnalytics = "UA-37762884-1"    
+    disqusShortname = "Blog do Cezar"

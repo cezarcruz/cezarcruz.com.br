@@ -5,8 +5,7 @@
     {{ partial "header.html" . }}
     <section id="main" class="outer">
         {{ partial "article.html" . }}
-        {{ if and (not .Params.nocomment) .Site.Params.enableDisqus }}
-            {{ template "_internal/disqus.html" . }}
+        {{ if and (not .Params.nocomment) .Site.Params.enableDisqus }}            
             <div id="disqus_thread"></div>
             <script>
 

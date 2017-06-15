@@ -1,9 +1,13 @@
 ---
 title: Como usar uma diretiva de máscara no angular js
+description: Neste post veremos como adicionar uma simples integração com uma diretiva de máscara no AngularJS
 author: Cezar Cruz
 type: post
 date: 2015-09-13T20:24:18+00:00
 url: /como-usar-uma-diretiva-de-mascara-no-angular-js/
+keywords:
+  - AngularJS
+  - JavaScript
 dsq_needs_sync:
   - 1
 dsq_thread_id:

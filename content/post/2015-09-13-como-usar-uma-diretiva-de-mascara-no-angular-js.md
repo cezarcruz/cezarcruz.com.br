@@ -8,6 +8,9 @@ url: /como-usar-uma-diretiva-de-mascara-no-angular-js/
 keywords:
   - AngularJS
   - JavaScript
+tags:
+  - AngularJS
+  - JavaScript
 dsq_needs_sync:
   - 1
 dsq_thread_id:

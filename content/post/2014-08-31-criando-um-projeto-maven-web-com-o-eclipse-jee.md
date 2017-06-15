@@ -4,6 +4,14 @@ author: Cezar Cruz
 type: post
 date: 2014-08-31T16:11:10+00:00
 url: /criando-um-projeto-maven-web-com-o-eclipse-jee/
+keywords:
+  - Maven
+  - Eclipse
+  - Java
+tags:
+  - Maven
+  - Eclipse
+  - Java
 dsq_thread_id:
   - 2975434776
 dsq_needs_sync:
@@ -13,26 +21,6 @@ categories:
 
 ---
 Olás, hoje vamos ver como criar um projeto java web utilizando [Olás, hoje vamos ver como criar um projeto java web utilizando][1] e Eclipse JEE/Tomcat.
-
-<!--more-->
-
-Pra esse tutorial, vamos considerar que o **Maven**, **Eclipse JEE** (utilizando java 1.8) e o **tomcat** estão configurados.
-
-## Criando o projeto
-
-O primeiro passo é criar um projeto no Eclipse:
-
-File -> New -> Maven Project<figure id="attachment_398" style="width: 300px" class="wp-caption aligncenter">
-
-[<img class="wp-image-398 size-medium" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_272,w_300/v1454457566/maven-new-project_chg3gr.png" alt="Novo projeto Maven" width="300" height="271" />][2]<figcaption class="wp-caption-text">Novo projeto Maven</figcaption></figure> 
-
-Nessa tele devemos selecionar a opção **Create a simple project(skip archetype selection),** conforme a figura, em seguida clicar em next.<figure id="attachment_399" style="width: 300px" class="wp-caption aligncenter">
-
-[<img class="wp-image-399 size-medium" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_272,w_300/v1454457564/maven-new-project-description_ui33fj.png" alt="Novo projeto Maven - Descrição" width="300" height="271" />][3]<figcaption class="wp-caption-text">Novo projeto Maven &#8211; Descrição</figcaption></figure> 
-
-Nessa tela temos as opções para identificar nosso projeto, devemos preencher as seguintes opções:
-
-  * `Olás, hoje vamos ver como criar um projeto java web utilizando [Olás, hoje vamos ver como criar um projeto java web utilizando][1] e Eclipse JEE/Tomcat.
 
 <!--more-->
 

@@ -27,19 +27,15 @@
                 <a href="{{ .RelPermalink }}#disqus_thread" class="article-comment-link">Comments</a>
             </div>
             {{ end }}
+            {{ if .Params.Author}}
+                <div class="article-comment-link-wrap">                            
+                        <span class="tb-author">por <a href="{{ "/author/" | relLangURL }}{{ .Param "author" | urlize }}">{{ .Param "author" }}</a></span>
+                </div>
+            {{ end }}
         </div>
         <div class="article-entry" itemprop="articleBody">
             {{ .Content }}
         </div>
-
-        {{ if not .Params.notoc }}
-        {{ if .TableOfContents }}
-        <div class="article-toc" {{ if .Site.Params.SmartToc }}style="display:none;"{{ end }}>
-            <h3>Contents</h3>
-            {{ .TableOfContents }}
-        </div>
-        {{ end }}
-        {{ end }}
         
         {{ if .Params.tags }}
         <footer class="article-footer">

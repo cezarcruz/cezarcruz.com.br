@@ -1099,3 +1099,7 @@ input[type=text] {
     border: none;
     border-bottom: 2px solid red;
 }
+
+* {
+    font-family: 'Ubuntu', 'Segoe UI', sans-serif;
+}

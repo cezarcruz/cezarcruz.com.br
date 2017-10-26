@@ -7,7 +7,8 @@ url: /criando-um-controller-com-angular-js-utilizando-padroes/
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - AngularJS
+  - JavaScript
 
 ---
 Ol<span class="st">ás</span>, hoje vamos ver como criar um Controller no Angular.JS utilizando [styleguide][1] criado pelo John Papa.

@@ -7,7 +7,8 @@ url: /hello-angular-js/
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - JavaScript
+  - AngularJS
 
 ---
 Olá, hoje vou escrever um post bem básico de como utilizar **Angular.JS** no seu próximo projeto.

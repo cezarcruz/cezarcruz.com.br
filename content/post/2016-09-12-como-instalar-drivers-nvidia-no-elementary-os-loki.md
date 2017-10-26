@@ -7,7 +7,7 @@ url: /como-instalar-drivers-nvidia-no-elementary-os-loki/
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Linux
 
 ---
 Olás,

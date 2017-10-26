@@ -17,7 +17,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Maven
+  - Eclipse
+  - Java
 
 ---
 Olás, hoje vamos ver como criar um projeto java web utilizando [Olás, hoje vamos ver como criar um projeto java web utilizando][1] e Eclipse JEE/Tomcat.

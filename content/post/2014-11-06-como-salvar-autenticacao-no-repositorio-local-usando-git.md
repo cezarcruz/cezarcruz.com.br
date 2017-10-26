@@ -7,7 +7,7 @@ url: /como-salvar-autenticacao-no-repositorio-local-usando-git/
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Git
 
 ---
 Uma dica bem curtinha, porém útil:

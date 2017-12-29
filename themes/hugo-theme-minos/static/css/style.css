@@ -1101,5 +1101,5 @@ input[type=text] {
 }
 
 * {
-    font-family: 'Ubuntu', 'Segoe UI', sans-serif;
+    font-family: 'Ubuntu', 'Segoe UI', 'Droid Sans', serif;;
 }

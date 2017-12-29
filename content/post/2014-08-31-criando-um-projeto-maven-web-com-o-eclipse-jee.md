@@ -163,8 +163,8 @@ Feito isso, basta adicionarmos o projeto dentro do **tomcat** e iniciar o mesmo.
 Até mais.
 
  [1]: https://cezarcruz.com.br/2014/07/como-instalar-o-maven-windows/ "Como instalar o Maven no Windows"
- [2]: https://wordpress-cezzao.rhcloud.com/wp-content/uploads/2014/08/maven-new-project.png
- [3]: https://wordpress-cezzao.rhcloud.com/wp-content/uploads/2014/08/maven-new-project-description.png
- [4]: https://wordpress-cezzao.rhcloud.com/wp-content/uploads/2014/08/projeto-maven-estrutura.png
- [5]: https://wordpress-cezzao.rhcloud.com/wp-content/uploads/2014/08/criando-arquivo-web-xml1.png
- [6]: https://wordpress-cezzao.rhcloud.com/wp-content/uploads/2014/08/pagina-html.png
+ [2]: https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457566/maven-new-project_chg3gr.png
+ [3]: https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457564/maven-new-project-description_ui33fj.png
+ [4]: https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457563/projeto-maven-estrutura_sr3pff.png
+ [5]: https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457561/criando-arquivo-web-xml1_sjwkfw.png
+ [6]: https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457560/pagina-html_jfcria.png

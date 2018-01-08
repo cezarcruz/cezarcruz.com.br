@@ -2,7 +2,7 @@
 Categories: ["Java", "Intellij"]
 type: post
 Description: "Como exportar um arquivo .jar utilizando intellij"
-Tags: ["Java"]
+Tags: ["Java", "Intellij"]
 date: "2018-01-07T09:59:51-03:00"
 title: "Como exportar um arquivo .jar utilizando intellij"
 url: /como-exportar-jar-utilizando-intellij/
@@ -14,15 +14,15 @@ Neste post, veremos como é simples, mas não tão intuitivo, exportar um arquiv
 <!--more-->
 O primeiro passo é termos um projeto criado e aberto no intellij. Em seguida, ir no menu *File -> Project Structure*
 
-![[1]](https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1515348274/project-structure_exlwia.png)
+[![Project Structure](https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1515348274/project-structure_exlwia.png)](https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1515348274/project-structure_exlwia.png)
 
 Selecione a opção Artifacts, clique no *+ (mais) -> Jar -> From modules with dependencies*
 
-![Create jar from module](https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1515348901/create-jar-from-module_losxnf.png)
+[![Create jar from module](https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1515348901/create-jar-from-module_losxnf.png)](https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1515348901/create-jar-from-module_losxnf.png)
 
 Na opção *Main Class*, aponte para a classe "Main" do seu projeto, feito isso, sua configuração deve ficar assim
 
-![Resultado] (https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1515349212/jar-configurado_ycz8yn.png)
+[![Resultado] (https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1515349212/jar-configurado_ycz8yn.png)](https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1515349212/jar-configurado_ycz8yn.png)
 
 Para gerar o jar, *Build -> Build Artifacts*, selecionar o seu jar e a opcao build. 
 
@@ -35,4 +35,3 @@ java -jar <nome do seu projeto>
 ```
 
 =)
-[1]:https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1515348274/project-structure_exlwia.png "Project Structure"

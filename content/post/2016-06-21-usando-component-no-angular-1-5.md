@@ -7,7 +7,11 @@ url: /usando-component-no-angular-1-5/
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Javascript
+  - AngularJS
+tags:
+  - Javascript
+  - AngularJS
 
 ---
 Olá,

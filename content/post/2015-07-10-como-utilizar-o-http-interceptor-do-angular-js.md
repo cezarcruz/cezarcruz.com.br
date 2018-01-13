@@ -7,7 +7,11 @@ url: /como-utilizar-o-http-interceptor-do-angular-js/
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Javascript
+  - AngularJS
+tags:
+  - Javascript
+  - AngularJS
 
 ---
 Olás, hoje uma dica para como utilizar um $http interceptor do Angular.JS.

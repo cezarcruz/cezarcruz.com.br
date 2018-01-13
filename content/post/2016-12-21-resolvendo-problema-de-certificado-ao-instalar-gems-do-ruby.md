@@ -7,7 +7,9 @@ url: /resolvendo-problema-de-certificado-ao-instalar-gems-do-ruby/
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Ruby
+tags:
+  - Ruby
 
 ---
 Depois de instalar o Ruby (RubyInstaller) no Windows e tentar utilizar o comando:

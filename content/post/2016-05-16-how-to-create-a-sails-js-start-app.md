@@ -7,7 +7,11 @@ url: /how-to-create-a-sails-js-start-app/
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - NodeJS
+  - SailsJS
+tags:
+  - NodeJS
+  - SailsJS
 
 ---
 Hello folks.

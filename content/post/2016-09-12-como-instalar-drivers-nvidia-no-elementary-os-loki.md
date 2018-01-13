@@ -8,6 +8,8 @@ dsq_needs_sync:
   - 1
 categories:
   - Linux
+tags:
+  - Linux
 
 ---
 Olás,

@@ -5,18 +5,16 @@ author: Cezar Cruz
 type: post
 date: 2015-09-13T20:24:18+00:00
 url: /como-usar-uma-diretiva-de-mascara-no-angular-js/
-keywords:
-  - AngularJS
+categories:
   - JavaScript
+  - AngularJS
 tags:
-  - AngularJS
   - JavaScript
+  - AngularJS
 dsq_needs_sync:
   - 1
 dsq_thread_id:
   - 4127431953
-categories:
-  - Outros
 
 ---
 Olás, no tutorial de hoje, vou mostrar como criar um diretiva bem simples utilizando Angular JS para colocar uma máscara de telefone celular com o nono digito em um campo input text.

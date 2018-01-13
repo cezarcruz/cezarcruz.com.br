@@ -4,10 +4,14 @@ author: Cezar Cruz
 type: post
 date: 2017-04-19T00:47:44+00:00
 url: /open-in-terminal-nautilus-do-fedora/
+tags:
+  - Linux
+  - Fedora
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Linux
+  - Fedora
 
 ---
 Olas,

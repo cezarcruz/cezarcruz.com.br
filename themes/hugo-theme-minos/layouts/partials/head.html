@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+    <meta charset="utf-8">
     <title>{{ if ne .Title .Site.Title }} {{ .Site.Title }} - {{ end }}{{ .Title }}</title>
 
     {{ partial "meta.html" . }}
@@ -14,6 +15,5 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
-    <meta name="google-site-verification" content="P6NeAS00fSfvFWx5QxNI1G16fR9eWzp1HCKOtbJuB98" />
     {{ .Hugo.Generator }}
 </head>

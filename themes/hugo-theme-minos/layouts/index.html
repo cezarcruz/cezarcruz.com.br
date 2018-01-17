@@ -2,7 +2,7 @@
 <body>
 <div id="container">
     {{ partial "header.html" . }}
-    <section id="main" class="outer">
+    <section id="main" class="outer" role="main">
         {{ range .Paginator.Pages }}
         <article class="article article-type-post" itemscope itemprop="blogPost">
             <div class="article-inner">

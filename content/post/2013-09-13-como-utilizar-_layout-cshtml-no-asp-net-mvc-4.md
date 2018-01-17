@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - .NET
+tags:
+  - .NET
 
 ---
 Nesse tutorial vamos aprender como utilizar o arquivo de _Layout.cshtml no nosso <a href="https://cezarcruz.com.br/blog/2013/09/criando-o-primeiro-projeto-aspnet-mvc-com-csharp/" target="_blank">primeiro projeto MVC 4</a>.

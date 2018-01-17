@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - .NET
+tags:
+  - .NET
 
 ---
 O CMS que irei mostrar aqui é o BlogEngine, feito em CSharp e roda no IIS, uma boa alternativa ao WordPress para que usar servidor Windows.

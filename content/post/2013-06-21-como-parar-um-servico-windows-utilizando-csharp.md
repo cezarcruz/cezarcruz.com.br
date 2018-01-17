@@ -9,7 +9,11 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - .NET
+  - CSharp
+tags:
+  - .NET
+  - CSharp
 
 ---
 Saindo um pouco do PHP, vamos para a plataforma .NET, nesse tutorial (guia rápido hehhehe), vou ensinar como parar e subir um serviço Windows utilizando CSharp, vamos lá.

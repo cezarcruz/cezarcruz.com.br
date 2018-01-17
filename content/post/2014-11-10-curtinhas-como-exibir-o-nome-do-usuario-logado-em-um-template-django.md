@@ -7,7 +7,9 @@ url: /curtinhas-como-exibir-o-nome-do-usuario-logado-em-um-template-django/
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Django
+tags:
+  - Django
 
 ---
 Olá, uma dica curtinha hoje:

@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Markdown
+tags:
+  - Markdown
 
 ---
 Olás, nesse tutorial, vou mostrar como utilizarmos o **Markdown** para escrevermos textos formatados em Html. Esse tutorial será, basicamente, um spin-off da saga Jekyll.

@@ -8,7 +8,8 @@ dsq_needs_sync:
   - 1
 categories:
   - Git
-
+tags:
+  - Git
 ---
 Uma dica bem curtinha, porém útil:
   

@@ -7,7 +7,9 @@ url: /como-navegar-por-um-field-manytomany-em-um-template-django/
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Django
+tags:
+  - Django
 
 ---
 Olás,  hoje mais uma dica curtinha: como navegar por um campo **manytomany** em um template **Django**.

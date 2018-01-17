@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Jekyll
+tags:
+  - Jekyll
 
 ---
 **Jekyll**, um software para gerar páginas estáticas usado principalmente pra blogs. Esse tutorial é a primeira parte. O **Jekyll** é um software gerador de páginas estáticas. Usando arquivos de texto com [Markdown][1], ele cria um site completo, estático, pronto pra ser publicado. A vantagem de gerar um blog, ou um site em html estático, é que não precisamos nos preocupar com muitas camadas de segurança, considerando que eliminamos o interpretador PHP, no caso do WordPress, eliminamos o próprio WordPress, que apesar de ser uma ótima plataforma de blog, pode conter bugs, eliminamos também a necessidade de um servidor de banco de dados (falow MySql 😉 ), e claro,  o desempenho, como só é exibido páginas estáticas, são menos requisições e nada pra processar e pra hospedar apenas páginas estáticas é muito mais barato e até &#8220;di grátis&#8221; hehehehe.

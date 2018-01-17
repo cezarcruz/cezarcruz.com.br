@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - SVN
+tags:
+  - SVN
 
 ---
 Um requisito básico para programar, talvez até antes de uma IDE, é uma forma de armazenar os códigos com segurança e se for com controle de versão, melhor ainda.

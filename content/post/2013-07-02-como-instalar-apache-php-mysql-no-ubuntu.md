@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - LAMP
+tags:
+  - LAMP
 
 ---
 Olás, nesse tutorial veremos como instalar e configurar o Ubuntu para rodar nossos sites em PHP.

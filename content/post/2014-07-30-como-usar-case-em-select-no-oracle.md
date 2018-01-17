@@ -9,7 +9,11 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - SQL
+  - Oracle
+tags:
+  - SQL
+  - Oracle
 
 ---
 Olás,

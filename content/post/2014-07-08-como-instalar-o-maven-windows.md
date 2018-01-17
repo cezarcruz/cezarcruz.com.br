@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Maven
+tags:
+  - Maven
 
 ---
 Olás, depois de um tempo parado, voltamos com um post ensinando como instalar o Maven.

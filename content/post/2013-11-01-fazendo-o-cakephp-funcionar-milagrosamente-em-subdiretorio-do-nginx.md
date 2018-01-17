@@ -9,7 +9,11 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - PHP
+  - CakePHP
+tags:
+  - PHP
+  - CakePHP
 
 ---
 Olás, uma dica rápida pra fazer o CakePHP rodar satisfatoriamente no NGINX.

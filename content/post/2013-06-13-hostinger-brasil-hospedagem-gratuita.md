@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - Hospedagem
+tags:
+  - Hospedagem
 
 ---
 <a href="http://api.hostinger.com.br/redir/1553901" target="_blank"><img alt="Hospedagem Gratuita" src="http://hostinger.com.br/banners/br/hostinger-600x400-2.gif" width="600" height="400" border="0" /></a>

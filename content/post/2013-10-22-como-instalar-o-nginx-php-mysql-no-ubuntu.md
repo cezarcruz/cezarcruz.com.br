@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - LEMP
+tags:
+  - LEMP
 
 ---
 ## Hoje uma dica bem simples: como instalar o Nginx (Servidor WEB) + PHP e MySql no Ubuntu.

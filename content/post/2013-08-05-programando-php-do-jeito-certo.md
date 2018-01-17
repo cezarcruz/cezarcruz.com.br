@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - PHP
+tags:
+  - PHP
 
 ---
 Um grande problema pra quem está aprendendo uma linguagem de programação nova é como fazer as coisas da maneira certa, navegando pelo Facebook, encontrei uma dica muito bacana de como programar PHP do jeito certo, tudo que você precisa está nesse site: <http://br.phptherightway.com/>

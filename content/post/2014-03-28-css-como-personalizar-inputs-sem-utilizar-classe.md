@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - CSS
+tags:
+  - CSS
 
 ---
 Olás, vindo aqui hoje só pra manter o blog &#8220;ativo&#8221; heheh, hoje, uma dica bem simples de **css** pra personalizar <del>textbox</del> (mania de .net) inputs.

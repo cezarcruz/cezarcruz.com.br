@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - PHP
+tags:
+  - PHP
 
 ---
 Dica rápida para descobrir qual navegador está acessando sua aplicação **php**:

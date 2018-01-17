@@ -9,7 +9,11 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - PHP
+  - CakePHP
+tags:
+  - PHP
+  - CakePHP
 
 ---
 Olá, hoje mais uma dica sobre CakePHP, vou ensinar como colocar CSS e Javascript corretamente no seu projeto CakePHP.

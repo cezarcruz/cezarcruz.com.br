@@ -9,7 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - CSS
+tags:
+  - CSS
 
 ---
 Pra quem está cansado de usar o Twitter Bootstrap, não que ele seja ruim, muito pelo contrario, sugiro a utilização do Foundation 4.

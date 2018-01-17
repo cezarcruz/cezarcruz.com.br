@@ -9,7 +9,11 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - .NET
+  - CSharp
+tags:
+  - .NET
+  - CSharp
 
 ---
 Fala pessoal,

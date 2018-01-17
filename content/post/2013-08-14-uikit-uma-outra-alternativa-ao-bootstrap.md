@@ -9,8 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
-
+  - CSS
+tags:
+  - CSS
 ---
 Como mostrei nesse post <a href="https://cezarcruz.com.br/blog/2013/07/dica-rapida-foundation-4-uma-alternativa-ao-bootsrap/" target="_blank">uma alternativa ao bootsrap </a>, nesse post vou &#8220;mostrar&#8221; (entenda como colocar o link para o site) um outro framework que é uma ótima alternativa ao velho bootsrap.
 

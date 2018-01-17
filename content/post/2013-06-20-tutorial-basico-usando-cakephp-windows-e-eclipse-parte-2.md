@@ -9,7 +9,11 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - PHP
+  - CakePHP
+tags:
+  - PHP
+  - CakePHP
 
 ---
 Continuando com a segunda parte do tutorial básico usando CakePHP, Windows e Eclipse.

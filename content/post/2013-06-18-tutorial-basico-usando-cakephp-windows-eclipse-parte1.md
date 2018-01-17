@@ -9,7 +9,11 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - Outros
+  - PHP
+  - CakePHP
+tags:
+  - PGP
+  - CakePHP
 
 ---
 [<img class="alignnone size-full wp-image-42" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457626/cake-logo_ns8tdv.png" alt="cake-logo" width="180" height="180" />][1]

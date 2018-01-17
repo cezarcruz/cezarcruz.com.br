@@ -9,6 +9,9 @@ dsq_needs_sync:
 categories:
   - JavaScript
   - AngularJS
+tags:
+  - JavaScript
+  - AngularJS
 
 ---
 Olá, hoje vou escrever um post bem básico de como utilizar **Angular.JS** no seu próximo projeto.

@@ -30,7 +30,7 @@ Para compilar um arquivo Java
 javac HelloWorld.java
 ```
 
-O nome do arquivo-fonte a ser compilado deve ser fornecido obrigatoriamente com sua extensão .java. Quando a compilação transcorre corretamente, nenhuma mensagem é exibida, produzindo o arquivo HelloWorld.class. Caso sejam exibidas mensagens de erros, as linhas em que esses erros ocorrem também serão exibidas.
+O nome do arquivo-fonte a ser compilado deve ser fornecido obrigatoriamente com sua extensão *.java*. Quando a compilação transcorre corretamente, nenhuma mensagem é exibida, produzindo o arquivo *HelloWorld.class*. Caso sejam exibidas mensagens de erros, as linhas em que esses erros ocorrem também serão exibidas.
 
 Para executar o programa *HelloWorld* é preciso acionar a JVM com o comando
 

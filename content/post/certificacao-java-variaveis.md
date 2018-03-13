@@ -27,11 +27,11 @@ Exemplos inválidos:
 |--- |-------|---         |--------   |------|-------|
 | 1x | outro | novo valor | sem-valor | void | super |
 
-O Java possui um conjunto de palavras que indicam os nomes dos tipos primitivos, as diretivas da linguagem, os especificadores e modificadores e outros elementos pertencentes a sintaxe dessa linguagem. Essas palavras são reservadas e não podem ser utilizadas com outro finalidade:
+O Java possui um conjunto de palavras que indicam os nomes dos tipos primitivos, as diretivas da linguagem, os especificadores e modificadores e outros elementos pertencentes a sintaxe dessa linguagem. Essas palavras são reservadas e não podem ser utilizadas com outra finalidade:
 
 *abstract*, *assert*, *boolean*, *break*, *byte*, *case*, *catch*, *class*, *continue*, *default*, *do*, *double*, *else*, *enum*, *extends*, *false*, *final*, *finally*, *float*, *for*, *if*, *implements*, *import*, *instanceof*, *int*, *interface*, *long*, *native*, *new*, *null*, *package*, *private*, *protected*, *public*, *return*, *short*, *static*, *strictfp*, *super*, *switch*, *synchronized*, *this*, *throw*, *throws*, *transient*, *true*, *try*, *void*, *volatile*, *while*
 
-false e true não são palavras reservadas, mas valores literais do tipo boolean. Do mesmo modo, null é o literal nulo. Além dos citados, existem outras duas que, embora sejam reservadas, nao sao utilizadas pela linguagem: const e goto.
+false e true não são palavras reservadas, mas valores literais do tipo boolean. Do mesmo modo, null é o literal nulo. Além dos citados, existem outras duas que, embora sejam reservadas, nao sao utilizadas pela linguagem: *const* e *goto*.
 
 Declarar uma variável é associar um tipo, um nome e um valor. Para isso deve ser observada a sintaxe:
 

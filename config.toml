@@ -1,14 +1,27 @@
 baseURL = "https://cezarcruz.com.br"
-languageCode = "pt-BR"
 title = "Blog do Cezar"
-theme = "hugo-theme-minos"
+theme = "Mainroad"
 canonifyURLs = true
+googleAnalytics = "UA-37762884-1"
+disqusShortname = "cezarcruz"
+languageCode = "pt-br"
 
 [params]
-    googleAnalytics = "UA-37762884-1"
-    enableDisqus = true
+    post_navigation = true # Show post navigation at bottom of pages if true
 
 [taxonomies]
-    tag = "tags"
-    category = "categories"
-    author = "author"
+  tag = "tags"
+  category = "categories"
+  author = "author"
+  toc = true
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right"  # Configure layout for list pages
+  single = true # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)

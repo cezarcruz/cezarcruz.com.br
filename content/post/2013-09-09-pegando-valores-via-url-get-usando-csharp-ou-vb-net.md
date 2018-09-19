@@ -9,9 +9,9 @@ dsq_thread_id:
 dsq_needs_sync:
   - 1
 categories:
-  - .NET
+  - NET
 tags:
-  - .NET
+  - NET
 
 ---
 Dica rápida pra pegar valores (GET) em urls em ASP .NET:

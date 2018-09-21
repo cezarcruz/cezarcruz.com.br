@@ -23,9 +23,9 @@ O nome de uma variável, em Java, pode ser formado por uma letra, pelos caracter
 
 Exemplos inválidos:
 
-|    |       |            |           |      |       |
-|--- |-------|---         |--------   |------|-------|
-| 1x | outro | novo valor | sem-valor | void | super |
+|    |            |           |      |       |
+|--- |---         |--------   |------|-------|
+| 1x | novo valor | sem-valor | void | super |
 
 O Java possui um conjunto de palavras que indicam os nomes dos tipos primitivos, as diretivas da linguagem, os especificadores e modificadores e outros elementos pertencentes a sintaxe dessa linguagem. Essas palavras são reservadas e não podem ser utilizadas com outra finalidade:
 

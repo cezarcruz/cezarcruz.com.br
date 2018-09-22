@@ -6,10 +6,11 @@ googleAnalytics = "UA-37762884-1"
 disqusShortname = "cezarcruz"
 languageCode = "pt-br"
 
-[params]
-    post_navigation = true # Show post navigation at bottom of pages if true
+[Params]
+  post_navigation = true # Show post navigation at bottom of pages if true
+  readmore = true 
 
-[taxonomies]
+[Taxonomies]
   tag = "tags"
   category = "categories"
   author = "author"

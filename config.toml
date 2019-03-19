@@ -1,7 +1,7 @@
 baseURL = "https://cezarcruz.com.br"
 languageCode = "en"
 title = "Blog do Cezar"
-theme = "mainroad"
+theme = "Mainroad"
 canonifyURLs = true
 
 googleAnalytics = "UA-37762884-1"

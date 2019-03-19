@@ -1,14 +1,22 @@
 baseURL = "https://cezarcruz.com.br"
+languageCode = "en"
 title = "Blog do Cezar"
-theme = "Mainroad"
+theme = "mainroad"
 canonifyURLs = true
+
 googleAnalytics = "UA-37762884-1"
 disqusShortname = "cezarcruz"
-languageCode = "pt-br"
+
+[Author] # Used in authorbox
+  name = "Cezar Cruz"
+  bio = ""
+  #avatar = "img/avatar.png"
 
 [Params]
   post_navigation = true # Show post navigation at bottom of pages if true
   readmore = true 
+  #authorbox = true # Show authorbox at bottom of pages if true
+  dateformat = "2 Jan 2006" # change the format of dates
 
 [Taxonomies]
   tag = "tags"

@@ -1,14 +1,12 @@
 ---
-title: "Incluindo Lombok em sua aplicaçao Java"
+title: "Incluindo Lombok em sua aplicação Java"
 Categories: ["Java"]
 date: 2019-07-25T11:20:28-03:00
 draft: false
 author: Cezar Cruz
 ---
 
-Olá,
-
-no post de hoje, vamos ver como incluir o lombok na nossa aplicação Java.
+Olá, no post de hoje, vamos ver como incluir o lombok na nossa aplicação Java.
 
 <!--more-->
 
@@ -16,7 +14,7 @@ Primeiro, o que é o Lombok?
 
 Site do projeto: https://projectlombok.org/
 
-Basicamente o Lombok é um projeto que diminui a necessidade de ficar impĺementando um monte de código java que criamos em nossas classes. Ex: métodos get e set, builders, construtores, toString, hascode, etc. Com o lombok, basta anotarmos nossas classe com algumas anotações, que em tempo de compilação, o lombok gera todos esses métodos automaticamente, o que deixa nossa classe muito mais simples.
+Basicamente o Lombok é um projeto que diminui a necessidade de ficar implementando um monte de código java que criamos em nossas classes. Ex: métodos get e set, builders, construtores, toString, hascode, etc. Com o lombok, basta anotarmos nossas classe com algumas anotações, que em tempo de compilação, o lombok gera todos esses métodos automaticamente, o que deixa nossa classe muito mais simples.
 
 Classe sem anotações lombok (e nem consideramos o builder):
 

@@ -7,3 +7,16 @@ Para rodar o projeto, deve ser instalado o Hugo na sua distro e utilizar o coman
 ```
 hugo serve
 ```
+
+Para iniciarlizar o submoduleo
+
+```
+git submodule update --init --recursive
+```
+
+Para atualizar
+
+
+```
+git submodule update --recursive --remote
+```

@@ -1,6 +1,6 @@
 ---
 title: "Incluindo MapStruct em sua aplicação Java"
-Categories: ["Java"]
+Categories: ["Java", "MapStruct"]
 date: 2019-08-11T15:50:36-03:00
 draft: false
 author: Cezar Cruz

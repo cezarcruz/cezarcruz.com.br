@@ -284,6 +284,9 @@ Pronto.
  
 Enquanto isso veja a documentação:
 https://mapstruct.org/documentation/stable/reference/html/
+
+O código completo dete post está em:
+https://github.com/cezarcruz/codigos-do-site/tree/master/map-struct
  
 Qualquer duvida, comente o post.
  

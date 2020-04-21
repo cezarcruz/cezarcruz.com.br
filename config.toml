@@ -15,7 +15,7 @@ disqusShortname = "cezarcruz"
 [Params]
   post_navigation = true # Show post navigation at bottom of pages if true
   readmore = true 
-  subtitle = "um blog sobre programação e outras coisas mais" # Subtitle of your site. Used in site header
+  subtitle = "um blog sobre programação" # Subtitle of your site. Used in site header
   description = "John Doe's Personal blog about everything" # Site description. Used in meta description
   dateformat = "2 Jan 2006" # change the format of dates
 

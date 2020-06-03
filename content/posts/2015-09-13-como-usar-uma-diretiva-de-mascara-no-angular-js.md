@@ -77,4 +77,4 @@ Até a próxima.
 
 &nbsp;
 
- [1]: https://cezarcruz.com.br/2014/12/hello-angular-js/
+ [1]: /hello-angular-js/

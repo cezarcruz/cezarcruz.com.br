@@ -8,7 +8,7 @@ categories:
 tags:
   - NET
 ---
-Nesse tutorial vamos aprender como utilizar o arquivo de _Layout.cshtml no nosso <a href="https://cezarcruz.com.br/blog/2013/09/criando-o-primeiro-projeto-aspnet-mvc-com-csharp/" target="_blank">primeiro projeto MVC 4</a>.
+Nesse tutorial vamos aprender como utilizar o arquivo de _Layout.cshtml no nosso <a href="/criando-o-primeiro-projeto-aspnet-mvc-com-csharp/" target="_blank">primeiro projeto MVC 4</a>.
 
 Assim como no Web Forms com seu Master Page, o MVC tem o seu arquivo master também, porém ele é chamado de _Layout.cshtml, nele colocamos nosso layout padrão de páginas.
 

@@ -153,7 +153,7 @@ Feito isso, basta adicionarmos o projeto dentro do **tomcat** e iniciar o mesmo.
 
 Até mais.
 
- [1]: https://cezarcruz.com.br/2014/07/como-instalar-o-maven-windows/ "Como instalar o Maven no Windows"
+ [1]: /como-instalar-o-maven-windows/ "Como instalar o Maven no Windows"
  [2]: https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457566/maven-new-project_chg3gr.png
  [3]: https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457564/maven-new-project-description_ui33fj.png
  [4]: https://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457563/projeto-maven-estrutura_sr3pff.png

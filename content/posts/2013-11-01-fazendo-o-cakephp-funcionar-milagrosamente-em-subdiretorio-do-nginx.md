@@ -12,7 +12,7 @@ tags:
 ---
 Olás, uma dica rápida pra fazer o CakePHP rodar satisfatoriamente no NGINX.
 
-Caso queira saber como instalar o cake, é soh <a title="Como instalar o Nginx + PHP + MySql no Ubuntu" href="https://cezarcruz.com.br/blog/2013/10/como-instalar-o-nginx-php-mysql-no-ubuntu/" target="_blank">clicar aqui</a>. 😉
+Caso queira saber como instalar o cake, é soh <a title="Como instalar o Nginx + PHP + MySql no Ubuntu" href="/como-instalar-o-nginx-php-mysql-no-ubuntu/" target="_blank">clicar aqui</a>. 😉
 
 Sem mais delongas, basta abrir o arquivo de configuração do NGINX e adicionar as seguintes linhas, depois das configurações padrões para funcionamento com o PHP:
 

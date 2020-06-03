@@ -170,4 +170,4 @@ Está ai nossa primeira página utilizando o CakePHP, repare que ela já está e
 
 Até a próxima.
 
- [1]: https://cezarcruz.com.br/2013/06/tutorial-basico-usando-cakephp-windows-eclipse-parte1/
+ [1]: /tutorial-basico-usando-cakephp-windows-eclipse-parte1/

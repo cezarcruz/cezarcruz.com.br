@@ -51,7 +51,10 @@ debug: Port        : 1337
 ...
 </pre>
 
-The most important part of this message is the Sails port, to check your new app, you just need access this URL: http://localhost:1337/
+The most important part of this message is the Sails port, to check your new app, you just need access this URL:
+```
+http://localhost:1337/
+```
 
 Now we can add a simple endpoint just running this command (before run this command, you need stop Sails server with a &#8220;Ctrl+C&#8221;):
 
@@ -73,7 +76,7 @@ To create a new endpoint, you need to edit the HelloController.js and add the co
 };
 </pre>
 
-In this code, &#8220;action&#8221; is the name of the endpoint. The endpoint will be composed by: Controller name (without &#8216;Controller&#8217;) and the action name, in our case, will be: <http://localhost:1337/hello/action>
+In this code, &#8220;action&#8221; is the name of the endpoint. The endpoint will be composed by: Controller name (without &#8216;Controller&#8217;) and the action name, in our case, will be: <pre>http://localhost:1337/hello/action </pre>
 
 Now you can start Sails again, but this time, it will ask you what to do with Model. To this example, you just need answer &#8220;2&#8221;, then, your app will start normally.
 
@@ -132,18 +135,19 @@ This command will generate two files:
 
 To create a new endpoint, you need to edit the HelloController.js and add the code bellow:
 
-<pre>module.exports = {
+```javascript
+module.exports = {
         action: function (req, res) {
                 return res.send('Hello!');
         }
 };
-</pre>
+```
 
-In this code, &#8220;action&#8221; is the name of the endpoint. The endpoint will be composed by: Controller name (without &#8216;Controller&#8217;) and the action name, in our case, will be: <http://localhost:1337/hello/action>
+In this code, &#8220;action&#8221; is the name of the endpoint. The endpoint will be composed by: Controller name (without &#8216;Controller&#8217;) and the action name, in our case, will be: <pre>http://localhost:1337/hello/action</pre>
 
 Now you can start Sails again, but this time, it will ask you what to do with Model. To this example, you just need answer &#8220;2&#8221;, then, your app will start normally.
 
-Now, go to][1] , and you will see the &#8220;Hello!&#8221; message.
+Now, go to <pre>http://localhost:1337/hello/action</pre> , and you will see the &#8220;Hello!&#8221; message.
 
 For now, this is it! Thank you!
 
@@ -153,4 +157,4 @@ For now, this is it! Thank you!
   * <http://sailsjs.org/documentation/concepts/>
   * <http://sailsjs.org/get-started>
 
- [1]: http://localhost:1337/hello/action
+ [1]:

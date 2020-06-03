@@ -158,7 +158,9 @@ A ideia é a mesma para a lista ordenada.
 
 Pra criamos um link com uma página da web:
 
-    Esse o [link para o meu blog](https://cezarcruz.com.br/blog/ "Meu blog")
+```md
+Esse o [link para o meu blog](https://cezarcruz.com.br/blog/ "Meu blog")
+```
 
 O resultado vem logo abaixo:
 
@@ -208,4 +210,4 @@ Links úteis
  [2]: https://github.com/
  [3]: http://markable.in/editor/
  [4]: http://daringfireball.net/
- [5]: https://cezarcruz.com.br/blog/2014/01/como-utilizar-o-jekyll-pra-criar-um-blog-com-paginas-estaticas-jekyll-parte-1/ "Como utilizar o Jekyll pra criar um blog com páginas estáticas. Jekyll parte 1"
+ [5]: /como-utilizar-o-jekyll-pra-criar-um-blog-com-paginas-estaticas-jekyll-parte-1/ "Como utilizar o Jekyll pra criar um blog com páginas estáticas. Jekyll parte 1"

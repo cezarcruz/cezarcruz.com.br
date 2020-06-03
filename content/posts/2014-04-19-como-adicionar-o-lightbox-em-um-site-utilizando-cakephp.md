@@ -53,4 +53,4 @@ Espero que seja útil e obrigado por ter chegado até aqui!!
 Até!
 
  [1]: http://lokeshdhakar.com/projects/lightbox2/
- [2]: https://cezarcruz.com.br/2013/07/como-usar-javascript-e-css-no-cakephp/
+ [2]: /como-usar-javascript-e-css-no-cakephp/

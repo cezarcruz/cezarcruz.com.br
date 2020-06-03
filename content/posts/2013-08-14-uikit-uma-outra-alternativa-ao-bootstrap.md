@@ -8,7 +8,7 @@ categories:
 tags:
   - CSS
 ---
-Como mostrei nesse post <a href="https://cezarcruz.com.br/blog/2013/07/dica-rapida-foundation-4-uma-alternativa-ao-bootsrap/" target="_blank">uma alternativa ao bootsrap </a>, nesse post vou &#8220;mostrar&#8221; (entenda como colocar o link para o site) um outro framework que é uma ótima alternativa ao velho bootsrap.
+Como mostrei nesse post <a href="/dica-rapida-foundation-4-uma-alternativa-ao-bootsrap/" target="_blank">uma alternativa ao bootsrap </a>, nesse post vou &#8220;mostrar&#8221; (entenda como colocar o link para o site) um outro framework que é uma ótima alternativa ao velho bootsrap.
 
 Como falei no outro post, o Bootstrap não é ruim, mas se dermos uma olhada em alguns sites por ai, será muito fácil nos depararmos com o bootstrap, então, para que nosso site ou sistema não seja mais um igual ao boostrap, o [UIkit][1] é uma alternativa a se considerar.
 

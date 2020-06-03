@@ -16,10 +16,11 @@ Vamos lá, depois de instalado o CakePHP, podemos utilizar esse tutorial ([Como 
 
 A chamada para os arquivos de CSS e Javascript devem ficar assim:
 
-<pre class="lang:php decode:true">&lt;?php echo $this-&gt;Html-&gt;css('lightbox'); ?&gt;
-&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
-&lt;?php echo $this-&gt;Html-&gt;script('lightbox.min'); ?&gt;
-</pre>
+```php
+<?php echo $this->Html->css('lightbox'); ?>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
+<?php echo $this->Html->script('lightbox.min'); ?>
+```
 
 No código acima podemos ver:
 
@@ -33,11 +34,13 @@ Veja como irá ficar a nossa View que irá exibir as fotos:
 
 &nbsp;
 
-<pre class="lang:php decode:true">echo $this-&gt;Html-&gt;link(
-	 $this-&gt;Html-&gt;image($fotos['Foto']['caminho'], array('class' =&gt; 'class_img')),
+```php
+echo $this->Html->link(
+	 $this->Html->image($fotos['Foto']['caminho'], array('class' => 'class_img')),
 	 $fotos['Foto']['caminho'],
-	 array('escapeTitle' =&gt; false, 'title' =&gt; $fotos['Foto']['alt'], 'data-lightbox'=&gt; 'roadtrip', 'class' =&gt; 'class_url')
-);</pre>
+	 array('escapeTitle' => false, 'title' => $fotos['Foto']['alt'], 'data-lightbox'=> 'roadtrip', 'class' => 'class_url')
+);
+```
 
 Explicando o código (Acho que vou criar um categoria, &#8220;_explicando o código_&#8221; hahahahahah) :
 

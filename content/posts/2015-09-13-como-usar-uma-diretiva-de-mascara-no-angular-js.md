@@ -25,7 +25,8 @@ Pré requisito:
 
 Para criar uma diretiva, devemos definir ela no módulo usando &#8220;directive&#8221; e passando uma function, que será a diretiva de fato:
 
-<pre class="lang:js decode:true">angular.module("app").directive("phoneDir", PhoneDir);
+```javascript
+angular.module("app").directive("phoneDir", PhoneDir);
 
 
 function PhoneDir() {
@@ -42,7 +43,7 @@ function PhoneDir() {
         function putMask() {
             var mask;
             var cleanVal = element[0].value.replace(/\D/g, '');//pega o valor sem mascara
-            if(cleanVal.length &gt; 10) {//verifica a quantidade de digitos.
+            if(cleanVal.length > 10) {//verifica a quantidade de digitos.
                 mask = "(00) 00000-0000";
             } else {
                 mask = "(00) 0000-00009";
@@ -51,7 +52,8 @@ function PhoneDir() {
         }
     }
   }
-}</pre>
+}
+```
 
   * Na primeira linha definimos a diretiva dando o nome de &#8220;phoneDir&#8221;, lembrando que o nome deve ser camel case;
   * Na function é onde definimos a diretiva;
@@ -64,7 +66,9 @@ function PhoneDir() {
 
 Com a diretiva pronta, é hora de utilizarmos ela em um campo de texto, o que é muito simples:
 
-<pre class="lang:default decode:true ">&lt;input type="text" ng-model="phone" phone-dir/&gt;</pre>
+```html
+<input type="text" ng-model="phone" phone-dir />
+```
 
 No elemento eu coloco a diretiva utilizando o seguinte padrão:
 

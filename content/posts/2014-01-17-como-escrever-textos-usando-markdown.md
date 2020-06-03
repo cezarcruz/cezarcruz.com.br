@@ -18,166 +18,208 @@ Um local onde o **Markdown** é bastante utilizado é nos arquivos .md utilizado
 
 Mas vamos lá, pra escrevermos texto começamos sempre com o titulo, hehehe. Pra gerarmos  um titulo em **Markdown** é tranquilo, veja:
 
-<pre class="lang:yaml decode:true">007 - Um novo dia pra morrer
-============================</pre>
+```md
+007 - Um novo dia pra morrer
+============================
+```
 
 Colocamos a partir de três símbolos de **= **(igual)  abaixo do texto, e o HTML gerado é:
 
-<pre class="lang:xhtml decode:true">&lt;h1&gt;007 - Um novo dia pra morrer&lt;/h1&gt;</pre>
+```html
+<h1>007 - Um novo dia pra morrer</h1>;
+```
 
 Bem sussa, pra gerar um subtítulo, é tão simples quanto:
 
-<pre class="lang:yaml decode:true">O Daniel Craig é o James Bond mais zica
----------------------------------------</pre>
+```md
+O Daniel Craig é o James Bond mais zica
+---------------------------------------
+```
 
 Colocamos a partir de três traços abaixo do texto, e o HTML gerado é:
 
-<pre class="lang:xhtml decode:true">&lt;h2&gt;O Daniel Craig é o James Bond mais zica&lt;/h2&gt;</pre>
+```html
+<h2>O Daniel Craig é o James Bond mais zica</h2>
+```
 
 Pra escrever títulos, podemos utilizar outras formas também:
 
-<pre class="lang:default decode:true">#Titulo 1
+```md
+#Titulo 1
 ##Subtítulo
 ###SubSubtítulo
-.....</pre>
+.....
+```
 
 E o resultado é:
 
-<pre class="lang:xhtml decode:true">&lt;h1&gt;Titulo 1&lt;/h1&gt;
-&lt;h2&gt;Subtítulo&lt;/h2&gt;
-&lt;h3&gt;SubSubtítulo&lt;/h3&gt;</pre>
+```html
+<h1>Titulo 1</h1>
+<h2>Subtítulo</h2>
+<h3>SubSubtítulo</h3>
+```
+Para escrevermos um texto, também é bem simples, o que devemos atentar é que pra começarmos um novo paragrafo, devemos deixar uma linha em branco no final da linha:
 
-Para escrevermos um texto, também é bem simples, o que devemos atentar é que pra começarmos um novo paragrafo, devemos deixar uma linha em branco no texto **Markdown**:
-
-<pre class="lang:default decode:true">Curabitur consequat commodo magna. Nulla vel eros nec dui malesuada gravida. Donec pellentesque, quam et varius consectetur, risus orci dapibus ante, quis euismod diam metus sed erat.
+```md
+Curabitur consequat commodo magna. Nulla vel eros nec dui malesuada gravida. Donec pellentesque, quam et varius consectetur, risus orci dapibus ante, quis euismod diam metus sed erat.
 
 Mauris aliquet pretium ante, a rutrum libero facilisis a. Nulla facilisi. Praesent semper ornare felis, non pharetra elit vestibulum pulvinar.
 
-Phasellus quis lacus ultrices, posuere urna eu, pellentesque metus. Donec vulputate velit sit amet augue mattis rutrum. Phasellus ultrices tempor elit vitae vulputate. Praesent quis ullamcorper justo. Cras euismod nisl nibh, eu pulvinar lectus condimentum ut.</pre>
+Phasellus quis lacus ultrices, posuere urna eu, pellentesque metus. Donec vulputate velit sit amet augue mattis rutrum. Phasellus ultrices tempor elit vitae vulputate. Praesent quis ullamcorper justo. Cras euismod nisl nibh, eu pulvinar lectus condimentum ut.
+```
 
 O HTML gerado segue abaixo:
 
-<pre class="lang:xhtml decode:true">&lt;p&gt;Curabitur consequat commodo magna. Nulla vel eros nec dui malesuada gravida. Donec pellentesque, quam et varius consectetur, risus orci dapibus ante, quis euismod diam metus sed erat. &lt;/p&gt;
+```html
+<p>Curabitur consequat commodo magna. Nulla vel eros nec dui malesuada gravida. Donec pellentesque, quam et varius consectetur, risus orci dapibus ante, quis euismod diam metus sed erat. </p>
 
-&lt;p&gt;Mauris aliquet pretium ante, a rutrum libero facilisis a. Nulla facilisi. Praesent semper ornare felis, non pharetra elit vestibulum pulvinar. &lt;/p&gt;
+<p>Mauris aliquet pretium ante, a rutrum libero facilisis a. Nulla facilisi. Praesent semper ornare felis, non pharetra elit vestibulum pulvinar. </p>
 
-&lt;p&gt;Phasellus quis lacus ultrices, posuere urna eu, pellentesque metus. Donec vulputate velit sit amet augue mattis rutrum. Phasellus ultrices tempor elit vitae vulputate. Praesent quis ullamcorper justo. Cras euismod nisl nibh, eu pulvinar lectus condimentum ut.&lt;/p&gt;</pre>
+<p>Phasellus quis lacus ultrices, posuere urna eu, pellentesque metus. Donec vulputate velit sit amet augue mattis rutrum. Phasellus ultrices tempor elit vitae vulputate. Praesent quis ullamcorper justo. Cras euismod nisl nibh, eu pulvinar lectus condimentum ut.</p>
+```
 
 No meio do texto, podemos colocar palavras em itálico ou negrito, por exemplo:
 
-<pre class="lang:default decode:true">_consequat_
-**consequat**</pre>
+```md
+_consequat_
+**consequat**
+```
 
 Resultado:
 
-<pre class="lang:default decode:true">&lt;em&gt;consequat&lt;/em&gt;
-&lt;strong&gt;consequat&lt;/strong&gt;</pre>
+```html
+<em>consequat</em>;
+<strong>consequat</strong>;
+```
 
 Pra adicionarmos uma citação:
 
-<pre class="lang:default decode:true">&gt; Ser ou não ser, eis a questão.</pre>
+```md
+> Ser ou não ser, eis a questão.
+```
 
 O HTML gerado é:
 
-<pre class="lang:default decode:true">&lt;blockquote&gt;
-&lt;p&gt;Ser ou não ser, eis a questão&lt;/p&gt;
-&lt;/blockquote&gt;</pre>
+```html
+<blockquote>
+<p>Ser ou não ser, eis a questão</p>;
+</blockquote>
+```
 
 Em **Markdown**, sempre que vc começar a linha com > (maior) ele será uma citação e se você continuar em varias linhas seguidas, será apenas uma única citação com e um paragrafo, mas caso você coloque um linha em branco com sinal de > (maior) entre duas linhas com sinal de > (maior)  mas que tenha algum conteúdo, você irá criar um novo paragrafo, porem, está dentro de uma única citação.
 
 Pra criarmos uma lista não ordenada, temos um segredinho também, temos que pular uma linha depois do ultimo paragrafo, veja:
 
-<pre class="lang:default decode:true">Lista de compras
+```md
+Lista de compras
 
 * alface
 * tomate
 * cebola
-* couve</pre>
+* couve
+```
 
 O resultado:
 
-<pre class="lang:default decode:true">&lt;p&gt;Lista de compras&lt;/p&gt;
+```html
+<p>Lista de compras</p>
 
-&lt;ul&gt;
-&lt;li&gt;alface&lt;/li&gt;
-&lt;li&gt;tomate&lt;/li&gt;
-&lt;li&gt;cebola&lt;/li&gt;
-&lt;li&gt;couve&lt;/li&gt;
-&lt;/ul&gt;</pre>
+<ul>
+<li>alface</li>
+<li>tomate</li>
+<li>cebola</li>
+<li>couve</li>
+</ul>
+```
 
 Além do * (asterisco), podemos utilizar o sinal de + (soma) ou &#8211; (subtração) pra formarmos uma lista.
 
 Pra termos uma lista ordenada, segue a mesma ideia da lista não ordenada:
 
-<pre class="lang:default decode:true">Lista de compras
+```md
+Lista de compras
 
 1. alface
 2. tomate
 3. cebola
 4. couve</pre>
+```
 
 E resultado:
 
-<pre class="lang:default decode:true">&lt;p&gt;Lista de compras&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;alface&lt;/li&gt;
-&lt;li&gt;tomate&lt;/li&gt;
-&lt;li&gt;cebola&lt;/li&gt;
-&lt;li&gt;couve&lt;/li&gt;
-&lt;/ol&gt;</pre>
+```html
+<p>Lista de compras</p>
+
+<ol>
+<li>alface</li>
+<li>tomate</li>
+<li>cebola</li>
+<li>couve</li>
+</ol>
+```
 
 Pra criamos uma lista aninhada, basta uma colocarmos o subitem com um espaço na frente:
 
-<pre class="lang:default decode:true">Lista de compras
+```md
+Lista de compras
 
 * alface
- * tomate
+* tomate
 * cebola
- * couve</pre>
+* couve
+```
 
 O resultado:
 
-<pre class="lang:default decode:true">&lt;p&gt;Lista de compras&lt;/p&gt;
+```html
+<p>Lista de compras</p>
 
-&lt;ul&gt;
-    &lt;li&gt;alface
-        &lt;ul&gt;
-            &lt;li&gt;tomate&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;cebola
-        &lt;ul&gt;
-            &lt;li&gt;couve&lt;/li&gt;
-            &lt;li&gt;espinafre&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;</pre>
+<ul>
+    <li>alface
+        <ul>
+            <li>tomate</li>
+        </ul>
+    </li>
+    <li>cebola
+        <ul>
+            <li>couve</li>
+            <li>espinafre</li>
+        </ul>
+    </li>
+</ul>
+```
 
 A ideia é a mesma para a lista ordenada.
 
 Pra criamos um link com uma página da web:
 
 ```md
-Esse o [link para o meu blog](https://cezarcruz.com.br/blog/ "Meu blog")
+Esse é o [link para o meu blog](https://cezarcruz.com.br/ "Meu blog")
 ```
 
 O resultado vem logo abaixo:
 
-<pre class="lang:default decode:true">&lt;p&gt;Esse o &lt;a href="https://cezarcruz.com.br/blog/" title="Meu blog"&gt;link para o meu blog&lt;/a&gt;&lt;/p&gt;</pre>
+```html
+<p>Esse é o <a href="https://cezarcruz.com.br/" title="Meu blog">link para o meu blog</a></p>
+```
 
 Repare que o que está dentro do colchetes é o que irá virar um link, o endereço vem dentro de parênteses e utilizar o title dentro do parênteses é opcional, caso não queira, basta deixar somente o endereço.
 
 Ainda com links, podemos usar ele de uma forma um pouco mais organizada, utilizando referencias:
 
-<pre class="lang:default decode:true">O site do [G1][1] é igual ao do [R7][2]
+```md
+O site do [G1][1] é igual ao do [R7][2]
 
 [1]: http://g1.com "Site do G1"
-[2]: http://r7.com "Site do R7"</pre>
+[2]: http://r7.com "Site do R7"
+```
 
 O Resultado segue como de costume:
 
-<pre class="lang:default decode:true">&lt;p&gt;O site do &lt;a href="g1.com" title="Site do G1"&gt;G1&lt;/a&gt; é igual ao do &lt;a href="r7.com" title="Site do R7"&gt;R7&lt;/a&gt;&lt;/p&gt;</pre>
+```html
+<p>O site do <a href="g1.com" title="Site do G1">G1</a> é igual ao do <a href="r7.com" title="Site do R7">R7</a></p>
+```
 
 Pra utilizarmos referencias em links, temos que atentar aos fatos:
 
@@ -188,11 +230,15 @@ Pra utilizarmos referencias em links, temos que atentar aos fatos:
 
 Pra utilizarmos imagens, o código é semelhante ao de links:
 
-<pre class="lang:default decode:true">![O alt](https://www.google.com.br/images/srpr/logo11w.png "Logo do google")</pre>
+```md
+![O alt](https://www.google.com.br/images/srpr/logo11w.png "Logo do google")
+```
 
 E o lindo resultado:
 
-<pre class="lang:default decode:true">&lt;p&gt;Olha essa imagem: &lt;img src="https://www.google.com.br/images/srpr/logo11w.png" alt="O alt" title="Logo do google"&gt;&lt;/p&gt;</pre>
+```html
+<img src="https://www.google.com.br/images/srpr/logo11w.png" alt="O alt" title="Logo do google">
+```
 
 A diferença básica entre links e imagens é a ! (exclamação) antes do código.
 

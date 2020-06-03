@@ -16,21 +16,23 @@ Caso queira saber como instalar o cake, é soh <a title="Como instalar o Nginx +
 
 Sem mais delongas, basta abrir o arquivo de configuração do NGINX e adicionar as seguintes linhas, depois das configurações padrões para funcionamento com o PHP:
 
-<pre class="lang:sh decode:true">location /cake {
-               rewrite     ^/cake$ /cake/ permanent;
-               rewrite     ^/cake/(.+)$ /$1 break;
-               root        /usr/share/nginx/html/cake/app/webroot;
-               try_files   $uri /$uri/ @cakephp;
-       }
+```text
+location /cake {
+        rewrite     ^/cake$ /cake/ permanent;
+        rewrite     ^/cake/(.+)$ /$1 break;
+        root        /usr/share/nginx/html/cake/app/webroot;
+        try_files   $uri /$uri/ @cakephp;
+}
 
-       location @cakephp {
-               set $q $request_uri;
-               if ($request_uri ~ "^/cake(.+)$") {
-                       set $q $1;
-               }
-               fastcgi_param SCRIPT_FILENAME       /usr/share/nginx/html/cake/app/webroot/index.php;
-               fastcgi_param QUERY_STRING          url=$q;
-       }</pre>
+location @cakephp {
+        set $q $request_uri;
+        if ($request_uri ~ "^/cake(.+)$") {
+                set $q $1;
+        }
+        fastcgi_param SCRIPT_FILENAME       /usr/share/nginx/html/cake/app/webroot/index.php;
+        fastcgi_param QUERY_STRING          url=$q;
+}
+```
 
 Lembrando que essa configuração é pra quando estiver usando um subdiretório, no caso, /cake, e os parâmetros  fastcgi\_param SCRIPT\_FILENAME e root devem apontar para o diretório &#8220;fisico&#8221; do CakePHP..
 

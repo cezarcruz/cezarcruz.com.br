@@ -28,7 +28,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColo
 
 lembrando que quando o nome da regra começa com **.** (ponto), ela deve ser utilizada como class:
 
-<pre class="lang:css decode:true">&lt;div class="transparente"&gt;&lt;/div&gt;</pre>
+```html
+<div class="transparente"></div>
+```
 
 E caso queira alterar a cor do bloco transparente basta alterar as regras rgb e rgba.
 

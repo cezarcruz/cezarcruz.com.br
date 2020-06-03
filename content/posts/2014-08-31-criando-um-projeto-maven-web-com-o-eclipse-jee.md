@@ -62,38 +62,42 @@ De cima pra baixo temo:
 
 Depois que nosso projeto foi criado, precisamos fazer alguns ajustes para que ele rode adequadamente no **Eclipse**. Vamos começar pelo **pom.xml,** a versão gerada pelo Eclipse é a seguinte:
 
-<pre class="lang:xhtml decode:true ">&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
-  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
-  &lt;groupId&gt;br.com.cezarcruz&lt;/groupId&gt;
-  &lt;artifactId&gt;website&lt;/artifactId&gt;
-  &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
-  &lt;packaging&gt;war&lt;/packaging&gt;
-&lt;/project&gt;</pre>
+```xml
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.com.cezarcruz</groupId>
+  <artifactId>website</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+</project>
+```
 
 Nele devemos adicionar uma configuração para que o **maven/eclipse** saiba qual a versão do **java** ele deve utilizar no projeto:
 
-<pre class="lang:xhtml decode:true ">&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
-	&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
-	&lt;groupId&gt;br.com.cezarcruz&lt;/groupId&gt;
-	&lt;artifactId&gt;website&lt;/artifactId&gt;
-	&lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
-	&lt;packaging&gt;war&lt;/packaging&gt;
-	&lt;build&gt;
-		&lt;finalName&gt;website&lt;/finalName&gt;
-		&lt;plugins&gt;
-			&lt;plugin&gt;
-				&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-				&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
-				&lt;version&gt;3.1&lt;/version&gt;
-				&lt;configuration&gt;
-					&lt;source&gt;1.8&lt;/source&gt;
-					&lt;target&gt;1.8&lt;/target&gt;
-				&lt;/configuration&gt;
-			&lt;/plugin&gt;
-		&lt;/plugins&gt;
-	&lt;/build&gt;
-&lt;/project&gt;</pre>
+```xml
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.cezarcruz</groupId>
+	<artifactId>website</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<build>
+		<finalName>website</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+```
 
 Explicando:
 
@@ -118,32 +122,33 @@ Aqui, devemos reparar em duas coisas:
 
 Feito isso, clique em finish, será criando um arquivo xml vazio, apenas com o cabeçalho, devemos apagar e colocar o conteúdo abaixo:
 
-<pre class="lang:default decode:true">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" /&gt;
-</pre>
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" />
+```
 
 > Os arquivos que ficam dentro de WEB-INF não é possível acessar pela rede.
 
 Pronto, projeto configurado.
 
-&nbsp;
-
 ## Criando e acessando uma página HTML
 
 Agora que nosso projeto está configurado, vamos criar nossa primeira página, pra isso, basta criarmos uma página html qualquer, dentro da pasta webapp, pra concluir nosso tutorial, crie uma página com nome index.html e utilize o HTML abaixo:
 
-<pre class="lang:php decode:true">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;title&gt;Insert title here&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-	&lt;h1&gt;Olá mundo&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Olá mundo</h1>
+</body>
+</html>
+```
 
 Feito isso, basta adicionarmos o projeto dentro do **tomcat** e iniciar o mesmo. Após a inicialização do **tomcat**, acesse nossa pagina utilizando o link http://localhost:8080/website/ e nossa linda página será carregada:<figure id="attachment_404" style="width: 300px" class="wp-caption aligncenter">
 

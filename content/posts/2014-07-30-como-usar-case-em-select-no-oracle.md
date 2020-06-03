@@ -20,13 +20,14 @@ O **Case**, basicamente é um &#8220;if/else&#8221;, por exemplo, se um condiç�
 
 A utilização do Case é bem simples, veja abaixo:
 
-<pre class="lang:plsql decode:true">SELECT
+```sql
+SELECT
      CASE nome_coluna
      WHEN 'valor_ocorrer' THEN 'substitui_por_isso'
      ELSE 'valor_padrão'
      END
 FROM tabela;
-</pre>
+```
 
 Explicando:
 
@@ -34,14 +35,16 @@ Explicando:
 
 Também é possível utilizar mais de uma cláusula, bastando apenas acrescentar elas da seguinte forma:
 
-<pre class="lang:plsql decode:true">SELECT
+```sql
+SELECT
      CASE nome_coluna
      WHEN 'valor_ocorrer' THEN 'substitui_por_isso'
      WHEN 'valor2_ocorrer' THEN 'substitui_por_isso'
      WHEN 'valor3_ocorrer' THEN 'substitui_por_isso'
      ELSE valor_padrão
      END
-FROM tabela;</pre>
+FROM tabela;
+```
 
 Simples, porem muuuuuuito útil em alguns casos.
 

@@ -17,17 +17,22 @@ Ol<span class="st">ás</span>, hoje vamos ver como criar um Controller no Angula
 
 Vamos l<span class="st">á</span>, o primeiro passo é iniciarmos o arquivo utilizando o Immediately Invoked Function Expression (IIFE), ele garante que as variáveis fique apenas no escopo utilizado cuidando para que não aconteça colisões de variáveis. Para isso colocamos o código abaixo:
 
-<pre class="lang:js decode:true ">(function(){
+```js
+(function(){
     //conteúdo aqui
-})();</pre>
+})();
+```
 
 Feito isso, criamos o controller, efetivamente:
 
-<pre class="lang:js decode:true ">angular.module('app.seriado').controller('SeriadosCtrl', SeriadosCtrl);</pre>
+```js
+angular.module('app.seriado').controller('SeriadosCtrl', SeriadosCtrl);
+```
 
 Na única linha acima, setamos o controller SeriadosCtrl no angular module com a function SeriadosCtrl, o código ficar<span class="st">á</span> mais completo, com o exemplo abaixo:
 
-<pre class="lang:default decode:true">(function() {
+```js
+(function() {
 	/**
 	 * Controller do seriados.
 	 */
@@ -38,7 +43,8 @@ angular.module('app.seriado').controller('SeriadosCtrl', SeriadosCtrl);
 	function SeriadosCtrl($location, SeriadoService, $modal) {
 
 	}
-})();</pre>
+})();
+```
 
 Nas linhas acima temos o complemento da criação de um controller e ainda utilizamos a injeção de dependências no controller, pra isso utilizamos o <function_name>.$inject = <dependências>, lembrando que a ordem das dependências e a assinatura da function (SeriadosCtrl) devem ser as mesmas.
 

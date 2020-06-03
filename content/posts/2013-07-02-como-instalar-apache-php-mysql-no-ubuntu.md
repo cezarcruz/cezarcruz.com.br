@@ -14,7 +14,7 @@ Olás, nesse tutorial veremos como instalar e configurar o Ubuntu para rodar nos
 
 Aqui uma grande surpresa minha, é muito mais fácil instalar e rodar o PHP no Linux do que no Windows, é claro que o Windows tem os famosos pacotes &#8220;Wamp&#8221; que facilitam bastante, mas caso queira instalar separadamente o PHP, Apache e MySQL, ai é outra história, mas vamos lá, os passos são bem simples, primeiro, abra o Terminal e digite:
 
-<pre class="lang:sh decode:true">sudo apt-get install apache2</pre>
+`sudo apt-get install apache2`
 
 Esse comando irá instalar o apache, lembrando que o computador deve estar conectado na internet. Para verificar se o apache foi instalado corretamente, basta acessarmos http://localhost, e verificar se essa tela aparece:
 
@@ -24,7 +24,7 @@ Esse comando irá instalar o apache, lembrando que o computador deve estar conec
 
 > Não esqueça de dar permissão de escrita na pastar /var/www para o seu usuário, da seguinte forma:
 >
-> <pre class="lang:sh decode:true ">sudo chmod -R 777 /var/www/</pre>
+> `sudo chmod -R 777 /var/www/`
 >
 > **OBSERVAÇÃO MUITO IMPORTANTE:** só deve ser utilizado esse comando em ambiente de desenvolvimento, caso queira se aprofundar um pouco mais no assunto de permissões, sugiro que leia o seguinte texto:
 >
@@ -32,13 +32,13 @@ Esse comando irá instalar o apache, lembrando que o computador deve estar conec
 
 O próximo passo é instalar o PHP, no mesmo terminal onde instalamos o Apache, digitamos o  seguinte comando:
 
-<pre class="lang:sh decode:true">sudo apt-get install php5 php5-cli php5-dev php5-mcrypt php5-curl php5-gd libapache2-mod-php5</pre>
+`sudo apt-get install php5 php5-cli php5-dev php5-mcrypt php5-curl php5-gd libapache2-mod-php5`
 
 Para verificarmos se a instalação do PHP ocorreu tudo bem, criaremos um arquivo chamado info.php na pasta **/var/www** com o seguinte conteúdo:
 
-<pre class="lang:php decode:true">&lt;?php
-	phpinfo();
-?&gt;</pre>
+```php
+<?php phpinfo(); ?>
+```
 
 O resultado deve ser igual a figura a seguir
 
@@ -48,7 +48,7 @@ O resultado deve ser igual a figura a seguir
 
 Pronto, já temos o Apache e o PHP funcionando, agora o próximo passo é instalar o MySQL, tão simples quanto os anteriores, basta rodar o comando a seguir no Terminal:
 
-<pre class="lang:sh decode:true">sudo apt-get install mysql-client-5.5 mysql-server-5.5 php5-mysql phpmyadmin</pre>
+`sudo apt-get install mysql-client-5.5 mysql-server-5.5 php5-mysql phpmyadmin`
 
 Esse comando irá instalar, além do MySQL o phpMyAdmin que é uma interface para interação com o MySQL feita em PHP que é uma ótima alternativa para criar bancos e tabelas e todas as hospedagens que utilizei até hoje usam o phpMyAdmin como padrão para gerenciar base de dados.
 
@@ -66,7 +66,7 @@ Pronto, agora temos instalado nosso ambiente PHP x Linux com apenas 3 linhas de 
 >
 > Pro PhpMyAdmin funcionar corretamente, precisamos criar um link simbólico apontando pra ele, dentro da pasta /var/www, digite o seguinte comando:
 >
-> <pre class="lang:sh decode:true ">ln -s /usr/share/phpmyadmin</pre>
+> `ln -s /usr/share/phpmyadmin`
 >
 > Agora sim, tudo funcionando.
 

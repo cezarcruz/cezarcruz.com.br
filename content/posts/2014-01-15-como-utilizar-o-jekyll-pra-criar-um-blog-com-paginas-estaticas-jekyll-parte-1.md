@@ -16,29 +16,27 @@ tags:
 
 Vamos começar. O primeiro passo é instalar o Ruby na maquina, no Ubuntu é muuuuuuuuuito simples:
 
-<pre class="lang:sh decode:true">sudo apt-get install ruby1.9.1 ruby1.9.1-dev</pre>
+`sudo apt-get install ruby1.9.1 ruby1.9.1-dev`
 
 > No comando eu utilizei a versão 1.9.1, apesar de já existir a versão 2.1 do Ruby, quando fiz os primeiros testes, as coisas não foram lisas, como usando a 1.9.1 vai atender pro que precisamos, então é ela que iremos utilizar aqui. =D
 
 Isso já é o suficiente pra instalar o Ruby no ubuntu. Pra verificar se instalou certo, mais por desencargo mesmo, basta digitar o comando abaixo:
 
-<pre class="lang:sh decode:true">ruby --version</pre>
+`ruby --version`
 
 E o resultado é a versão do Ruby instalado&#8230; 😉 Agora que temos o Ruby funcionando, vamos instalar o **Jekyll**, o comando, claro, é bem simples:
 
-<pre class="lang:ruby decode:true">gem install jekyll</pre>
+`gem install jekyll`
 
 >  O gem é o comando do Ruby similar ao comando apt-get do Linux, ele serve pra instalar pacotes.
 
 Agora já estamos quase prontos pra começar a  criar páginas estáticas. O comando que devemos utilizar agora é:
 
-<pre class="lang:sh decode:true">jekyll new blog</pre>
+`jekyll new blog`
 
 Ele irá criar a estrutura padrão de diretórios do **Jekyll**, ela deve ficar assim:
 
 [<img class="size-medium wp-image-264 aligncenter" alt="arvore_de_diretorio_jekyll" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_193,w_300/v1454457572/arvore_de_diretorio_jekyll_kqae0n.png" width="300" height="192" />][2]
-
-&nbsp;
 
   * Os arquivos **_config.yml** é onde ficam as configurações do blog, como o nome do blog, por exemplo;
   * A pasta **css** é onde fica os arquivos de estilo;
@@ -47,7 +45,7 @@ Ele irá criar a estrutura padrão de diretórios do **Jekyll**, ela deve ficar 
 
 Por enquanto esses são os diretórios essenciais para começarmos a conhecer melhor nosso blog. Pra rodarmos ele localmente e ver como ficou, devemos, de dentro da pasta blog, rodar o comando abaixo:
 
-<pre class="lang:default decode:true">jekyll serve</pre>
+`jekyll serve`
 
 Ele irá disponibilizar um modo &#8220;preview&#8221; do blog no endereço http://localhost:4000, assim podemos ver como irá ficar nosso blog com o layout padrão do **jekyll**. Além disso, é claro, ele irá gerar uma build, as páginas html, dentro da pasta _site. O resultado final é a página abaixo: [<img class="size-medium wp-image-265 aligncenter" alt="pagina_inicial_utilizando_o_layout_padrao_do_jekyll" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_179,w_300/v1454457571/pagina_inicial_utilizando_o_layout_padrao_do_jekyll_kqxcae.png" width="300" height="178" />][3] Nos próximos tutorias irei explicar como criar um post, personalizar o blog, otimizar o SEO e o que for surgindo. Links úteis:
 

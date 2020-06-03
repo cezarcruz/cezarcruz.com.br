@@ -14,24 +14,29 @@ Saindo um pouco do PHP, vamos para a plataforma .NET, nesse tutorial (guia rápi
 
 Primeiro, vamos intanciar o ServiceController passando como o parâmetro  o nome do serviço que iremos gerenciar
 
-<pre class="lang:c# decode:true">using System.ServiceProcess;
+```csharp
+using System.ServiceProcess;
 
-ServiceController service = new ServiceController("xxxservico");</pre>
+ServiceController service = new ServiceController("xxxservico");
+```
 
 Aqui como paramos o serviço
 
-<pre class="lang:c# decode:true">if (service.Status.Equals(ServiceControllerStatus.Running))
-                        service.Stop();</pre>
-
-  *  Primeiro, verificamos se o serviço e está rodando
+```csharp
+if (service.Status.Equals(ServiceControllerStatus.Running))
+    service.Stop();
+```
+  * Primeiro, verificamos se o serviço e está rodando
   * Coso ele esteja, paramos ele usando o metodo Stop.
 
 Para iniciar basta utilizar isso
 
-<pre class="lang:c# decode:true ">if (service.Status.Equals(ServiceControllerStatus.Stopped))
-                        service.Start();</pre>
+```csharp
+if (service.Status.Equals(ServiceControllerStatus.Stopped))
+    service.Start();
+```
 
-  *  Verificamos se o serviço está parado
+  * Verificamos se o serviço está parado
   * Caso esteja, iniciamos ele
 
 Simples e pratico, até mais!!

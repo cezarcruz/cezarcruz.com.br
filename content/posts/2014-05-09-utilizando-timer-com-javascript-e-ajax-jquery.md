@@ -14,9 +14,8 @@ Hoje uma pequena dica de JavaScript / JQuery: Como fazer um &#8220;Ajax get&#822
 
 Vamos lá, depois de colocarmos as referencias necessárias para o JQuery, devemos utilizar o seguinte código:
 
-&nbsp;
-
-<pre class="lang:js decode:true">&lt;script&gt;
+```html
+<script>
     $(document).ready(function() {
     	function getData() {
     		$.ajax({
@@ -30,7 +29,8 @@ Vamos lá, depois de colocarmos as referencias necessárias para o JQuery, devem
     	getData();
     	setInterval(getData, 50000);
     });
-&lt;/script&gt;</pre>
+</script>
+```
 
 Explicando:
 
@@ -50,8 +50,6 @@ A parte principal é o **setInterval(getData, 50000). **Aqui temos  a parte pr
 
   1. A função que será executada deve ser chamada sem o &#8220;()&#8221; (parênteses) no final;
   2. O segundo parâmetro é o intervalo de tempo e milissegundos;
-
-&nbsp;
 
 Bom, é isso, espero que seja útil!! Até mais! =D
 

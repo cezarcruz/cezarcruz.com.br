@@ -69,12 +69,13 @@ This command will generate two files:
 
 To create a new endpoint, you need to edit the HelloController.js and add the code bellow:
 
-<pre>module.exports = {
+```javascript
+module.exports = {
         action: function (req, res) {
                 return res.send('Hello!');
         }
 };
-</pre>
+```
 
 In this code, &#8220;action&#8221; is the name of the endpoint. The endpoint will be composed by: Controller name (without &#8216;Controller&#8217;) and the action name, in our case, will be: <pre>http://localhost:1337/hello/action </pre>
 
@@ -114,7 +115,8 @@ In this new folder, will can see the files created by Sails. To run our app, you
 
 This time, the command will be executed fast, so, <span id="result_box" class="short_text" lang="en"><span class="">quickly</span></span> you can see a message saying something like that:
 
-<pre>...
+<pre>
+...
 debug: Environment : development
 debug: Port        : 1337
 ...

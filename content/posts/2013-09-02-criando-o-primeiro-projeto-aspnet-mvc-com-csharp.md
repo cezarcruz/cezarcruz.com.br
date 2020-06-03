@@ -64,7 +64,8 @@ No nosso exemplo ficará SiteController, na tela AddController coloque o Control
 
 Nossa classe SiteController irá estar assim:
 
-<pre class="lang:c# decode:true">using System;
+```csharp
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -83,7 +84,8 @@ namespace SiteMVC.Controllers
         }
 
     }
-}</pre>
+}
+```
 
 Note que nossa classe herda da classe Controller (OO aqui =P), e que já é criado automaticamente um método ActionResult chamdo Index que retorna uma View(). Essa classe quer dizer que, quando for feita a requisição http://endereco/Site/ irá retornar a View /Site/Index.
 
@@ -93,41 +95,47 @@ Agora vamos criar a view /Site/Index, pra fazermos isso, devemos criar uma pasta
 
 Agora foi criado a view Index.cshtml dentro da pasta Site, que ficou assim:
 
-<pre class="lang:c# decode:true">@{
+```html
+@{
     ViewBag.Title = "Index";
 }
 
-&lt;h2&gt;Index&lt;/h2&gt;</pre>
+<h2>Index</h2>
+```
 
 >  Nota: Sempre que criarmos um ActionResult no controller, devemos criar um arquivo cshtml com o mesmo nome para que possa ser chamado quando for feito a requisição via http.
 
 O arquivos Index.cshtml é um arquivo html (podemos colocar marcação html neles):
 
-<pre class="lang:c# decode:true">@{
+```html
+@{
     ViewBag.Title = "Index";
 }
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Home&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Home&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</pre>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Home</h1>
+    </body>
+</html>
+```
 
 Pra executarmos nosso projeto, precisamos fazer um pequeno ajuste no arquivo _RouteConfig.cs:_
 
-<pre class="lang:c# decode:true">public static void RegisterRoutes(RouteCollection routes)
-        {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+```csharp
+public static void RegisterRoutes(RouteCollection routes)
+    {
+        routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Site", action = "Index", id = UrlParameter.Optional }
-            );
-        }</pre>
+        routes.MapRoute(
+            name: "Default",
+            url: "{controller}/{action}/{id}",
+            defaults: new { controller = "Site", action = "Index", id = UrlParameter.Optional }
+        );
+    }
+```
 
 Essa classe define as rotas do MVC, e o parâmetro defaults é o controller que deve ser chamado quando não é passado nenhum link na url. No nosso caso, usaremos o controller Site, e o action Index, para que a primeira pagina a ser processada será o Index.cshmtl, o resultado está a baixo:<figure id="attachment_179" style="width: 300px" class="wp-caption aligncenter">
 
@@ -135,38 +143,44 @@ Essa classe define as rotas do MVC, e o parâmetro defaults é o controller que 
 
 O código html gerado fica assim:
 
-<pre class="lang:php decode:true">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Home&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Home&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</pre>
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Home</h1>
+    </body>
+</html>
+```
 
 Repare que o código gerado fica limpo e nada gerado escondido, que é comum quando se trata de webforms.
 
 Pra finalizar, vamos passar dados do controller para a View, pra isso, abrimos o SiteController.cs e editamos o ActionResult Index, inserindo a seguinte linha:
 
-<pre class="lang:c# decode:true">ViewBag.Mensagem = "Olá MVC";</pre>
+```csharp
+ViewBag.Mensagem = "Olá MVC";
+```
 
 Estamos definindo que a variável Titulo receberá a string Olá MVC. Obs: ela deve ser colocada antes do return View().
 
 Depois de definido o valor da variável, devemos colocar ela no arquivo Index.cshtml:
 
-<pre class="lang:default decode:true">@{
+```html
+@{
     ViewBag.Title = "Index";
 }
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Home&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;@ViewBag.Mensagem&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</pre>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>@ViewBag.Mensagem</h1>
+    </body>
+</html>
+```
 
 >  Pra utilizarmos Csharp no arquivo Index.cshtml devemos sempre começar o código com @ (arroba).
 >
@@ -178,17 +192,17 @@ Executamos novamente o nosso projeto, e teremos o resultado abaixo:<figure id="a
 
 E o código gerado:
 
-&nbsp;
-
-<pre class="lang:php decode:true">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Home&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Ol&#225; MVC&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</pre>
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Ol&#225; MVC</h1>
+    </body>
+</html>
+```
 
 É isso ai, até mais!
 

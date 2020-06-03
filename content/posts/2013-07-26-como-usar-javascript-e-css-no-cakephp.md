@@ -32,23 +32,25 @@ No nosso arquivos de layout padrão, no caso, o app/View/Layouts/default.ctp, de
 
 Para arquivos CSS:
 
-<pre class="lang:php decode:true">echo $this-&gt;Html-&gt;css(array('estilo'));</pre>
+```php
+echo $this->Html->css(array('estilo'));
+```
 
 Para arquivos javascript
 
-<pre class="lang:php decode:true">echo $this-&gt;Html-&gt;script('javascript')</pre>
+```php
+echo $this->Html->script('javascript')
+```
 
 >  Não é necessário colocar a extensão do arquivo, o CakePHP cuida de tudo 😉
 
 No arquivos final, quando o browser renderizar, o resultado será o seguinte:
 
-<pre class="lang:php decode:true">&lt;link rel="stylesheet" type="text/css" href="/cake/css/estilo.css" /&gt;
-&lt;script type="text/javascript" src="/cake/js/javascript.js"&gt;</pre>
-
-&nbsp;
+```html
+<link rel="stylesheet" type="text/css" href="/cake/css/estilo.css" />
+<script type="text/javascript" src="/cake/js/javascript.js">
+```
 
 Simples e bem fácil, essa foi uma dica de como colocar Javascript e CSS no seu projeto CakePHP.
 
 É isso ai, até mais.
-
-&nbsp;

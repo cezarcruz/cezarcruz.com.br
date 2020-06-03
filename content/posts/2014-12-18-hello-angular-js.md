@@ -21,27 +21,33 @@ Chega de papo, para mais informações nerds, acesse o [site do agunlar.][1]
 
 Bom, o primeiro passo é adicionar o **javascript** na nossa página HTML:
 
-<pre class="lang:js decode:true ">&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.7/angular.js"&gt;&lt;/script&gt;</pre>
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.7/angular.js"></script>
+```
 
 >  Vamos usar o CDN deles, fica a seu critério usar remoto ou local.
 
 Depois de adicionarmos isso no header do nosso **HTML**, o próximo passo é adicionar a tag ng-app no elemento body, ele ficara assim:
 
-<pre class="lang:default decode:true ">&lt;html lang="pt-BR" ng-app&gt;</pre>
+```html
+<html lang="pt-BR" ng-app>
+```
 
 Feito isso, seu **HTML** deverá estar assim:
 
-<pre class="lang:default decode:true">&lt;!DOCTYPE html&gt;
-&lt;html lang="pt-BR" ng-app&gt;
-&lt;head&gt;
-    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-    &lt;title&gt;Titulo&lt;/title&gt;
-    &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.7/angular.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
+```html
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Titulo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.7/angular.js"></script>
+</head>
+<body>
     1 + 1 = {{ 1 + 1 }}
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+</body>
+</html>
+```
 
 >  Adicionei o código 1 + 1 = {{ 1 + 1 }} apenas pra verificar se está ok, caso esteja ok, a saida do seu **HTML** deverá ser 1 + 1 = 2. Simples assim.
 
@@ -49,26 +55,30 @@ Assim, concluímos que tudo que tiver dentro de {{ }} será processado pelo **An
 
 Troque o conteúdo do seu body pelo código abaixo:
 
-<pre class="lang:default decode:true">&lt;input type="text" ng-model="valor"/&gt;
-&lt;p&gt;{{valor}}&lt;/p&gt;</pre>
+```html
+<input type="text" ng-model="valor"/>
+<p>{{valor}}</p>
+```
 
 Nele temos o conteúdo do <p> sendo atualizado conforme é digitado o no input. O grande segredo está no ng-model e no <a class="ng-binding" tabindex="2" href="https://docs.angularjs.org/tutorial/step_04">Two-way Data Binding</a> do Angular.
 
 Por ultimo um exemplo que mostra uma pontinha do potencial do **Angular.JS**, veja só:
 
-<pre class="lang:default decode:true ">&lt;html lang="pt-BR" ng-app="meuApp"&gt;
+```html
+<html lang="pt-BR" ng-app="meuApp">
 
-&lt;script&gt;
+<script>
         var meuApp = angular.module('meuApp',[]);
         meuApp.controller('HomeCtrl', ['$scope', function($scope) {
               $scope.valor = 'Oi Blog!';
         }]);
-&lt;/script&gt;
+</script>
 
-&lt;div ng-controller="HomeCtrl"&gt;
-        &lt;input type="text" ng-model="valor"/&gt;
-        &lt;p&gt;{{valor}}&lt;/p&gt;
-&lt;/div&gt;</pre>
+<div ng-controller="HomeCtrl">
+        <input type="text" ng-model="valor"/>
+        <p>{{valor}}</p>
+</div>
+```
 
 Podemos ver as seguintes alterações:
 

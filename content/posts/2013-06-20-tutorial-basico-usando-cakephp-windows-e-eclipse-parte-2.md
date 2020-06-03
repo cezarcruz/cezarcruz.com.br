@@ -24,30 +24,32 @@ Abra a pasta app->Config, nessa pasta, encontramos os arquivos relacionados ao 
 
 Após renomear o arquivo, vamos configurar a conexão com a base de dados, procure no arquivos por class DATABASE_CONFIG, ela deve esar assim:
 
-<pre class="lang:php decode:true">class DATABASE_CONFIG {
+```php
+class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' =&gt; 'Database/Mysql',
-		'persistent' =&gt; false,
-		'host' =&gt; 'localhost',
-		'login' =&gt; 'user',
-		'password' =&gt; 'password',
-		'database' =&gt; 'database_name',
-		'prefix' =&gt; '',
-		//'encoding' =&gt; 'utf8',
+		'datasource' =>; 'Database/Mysql',
+		'persistent' =>; false,
+		'host' =>; 'localhost',
+		'login' =>; 'user',
+		'password' =>; 'password',
+		'database' =>; 'database_name',
+		'prefix' =>; '',
+		//'encoding' => 'utf8',
 	);
 
 	public $test = array(
-		'datasource' =&gt; 'Database/Mysql',
-		'persistent' =&gt; false,
-		'host' =&gt; 'localhost',
-		'login' =&gt; 'user',
-		'password' =&gt; 'password',
-		'database' =&gt; 'test_database_name',
-		'prefix' =&gt; '',
-		//'encoding' =&gt; 'utf8',
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'test_database_name',
+		'prefix' => '',
+		//'encoding' => 'utf8',
 	);
-}</pre>
+}
+```
 
 <!--more-->
 
@@ -63,30 +65,32 @@ Devemos alterar apenas o login, password e o database:
 
 Por fim, seu código deve ficar assim:
 
-<pre class="lang:php decode:true">class DATABASE_CONFIG {
+```php
+class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' =&gt; 'Database/Mysql',
-		'persistent' =&gt; false,
-		'host' =&gt; 'localhost',
-		'login' =&gt; 'root',
-		'password' =&gt; '',
-		'database' =&gt; 'cake',
-		'prefix' =&gt; '',
-		//'encoding' =&gt; 'utf8',
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'cake',
+		'prefix' => '',
+		//'encoding' => 'utf8',
 	);
 
 	public $test = array(
-		'datasource' =&gt; 'Database/Mysql',
-		'persistent' =&gt; false,
-		'host' =&gt; 'localhost',
-		'login' =&gt; 'user',
-		'password' =&gt; 'password',
-		'database' =&gt; 'test_database_name',
-		'prefix' =&gt; '',
-		//'encoding' =&gt; 'utf8',
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'test_database_name',
+		'prefix' => '',
+		//'encoding' => 'utf8',
 	);
-}</pre>
+}
+```
 
 E ao acessar a pagina via navegador, deveremos ter o seguinte resultado:
 
@@ -130,13 +134,15 @@ Após criarmos o controller vamos editalo da seguinte forma:
 
 &nbsp;
 
-<pre class="lang:php decode:true">&lt;?php
+```php
+<?php
 class HomeController extends AppController{
 	public function index(){
 
 	}
 }
-?&gt;</pre>
+?>
+```
 
 Aqui uma menção a programação orientada a objetos. =D
 
@@ -156,9 +162,9 @@ Esses arquivos de template é que irá ser exibido no navegador, os arquivos .ct
 
 Para finalizarmos essa parte do tutorial, faremos o seguinte, coloque o código abaixo no no arquivo index.ctp
 
-&nbsp;
-
-<pre class="lang:php decode:true">&lt;?php echo "HelloCake" ?&gt;</pre>
+```php
+<?php echo "HelloCake" ?>
+```
 
 Feito isso acesse o link http://localhost/cake/home, o resultado será o seguinte:
 

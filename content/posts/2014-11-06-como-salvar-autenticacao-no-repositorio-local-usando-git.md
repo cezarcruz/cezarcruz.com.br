@@ -12,10 +12,10 @@ Uma dica bem curtinha, porém útil:
 
 Como configurar o git para não pedir senha ao baixar ou subir dados no repositório remoto, para isto, basta entrar no seu repositório local e digitar o comando abaixo:
 
-<pre class="line-pre ">git config credential.helper cache</pre>
+`git config credential.helper cache`
 
 Pra salvar apenas por um tempo determinado, utilizar:
 
-<pre class="lang:default decode:true">git config credential.helper 'cache --timeout=60000'</pre>
+`git config credential.helper 'cache --timeout=60000'`
 
 =D

@@ -16,23 +16,31 @@ http://exemplo.com/pag.aspx?rel=valor&lang=br
 
 Pra pegar o valor utilizando csharp:
 
-<pre class="lang:c# decode:true">string valor = Request.QueryString["rel"];</pre>
+```csharp
+string valor = Request.QueryString["rel"];
+```
 
 Ou:
 
-<pre class="lang:c# decode:true">foreach(string params in Request.QueryString)
+```csharp
+foreach(string params in Request.QueryString)
 {
     Response.write(Request.QueryString[params])
-}</pre>
+}
+```
 
 Pra pegar o valor utilizando VB.NET:
 
-<pre class="lang:vbnet decode:true">Dim valar As String = Request.QueryString("rel")</pre>
+```vb
+Dim valar As String = Request.QueryString("rel")
+```
 
 Ou:
 
-<pre class="lang:vbnet decode:true">For Each param As String In Request.QueryString()
+```vb
+For Each param As String In Request.QueryString()
     Response.Write(Request.QueryString(param))
-Next</pre>
+Next
+```
 
 Fácil fácil, até.

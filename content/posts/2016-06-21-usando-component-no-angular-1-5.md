@@ -63,7 +63,7 @@ E por fim, para adicionarmos nosso component na aplicação, podemos fazer igual
 
 ```javascript
 $routeProvider.when('/home', {
-  template: '&lt;home-module&gt;&lt;/home-module&gt;'
+  template: '<home-module></home-module>'
 });
 ```
 

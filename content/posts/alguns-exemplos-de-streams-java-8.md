@@ -16,22 +16,22 @@ A ideia é ser bem pratico, então, vamos ao exemplo:
 
 O primeiro passo é criar uma lista, no nosso caso, uma lista de Strings:
 
-```
-    final List<String> stringList = new ArrayList<>();
+```java
+final List<String> stringList = new ArrayList<>();
 
-    stringList.add("Brasil");
-    stringList.add("Argentina");
-    stringList.add("Chile");
-    stringList.add("Equador");
-    stringList.add("Brasil");
+stringList.add("Brasil");
+stringList.add("Argentina");
+stringList.add("Chile");
+stringList.add("Equador");
+stringList.add("Brasil");
 ```
 
 O ação obvia é iterar esta lista e imprimir seus itens, nada mais útil que nosso System.out:
 
-```
-    stringList.forEach(s -> {
-        System.out.println(s);
-    });
+```java
+stringList.forEach(s -> {
+    System.out.println(s);
+});
 ```
 No exemplo acima, podemos ler da seguinte forma:
 **para cada item s da lista stringList passamos um método que faz algo com s**
@@ -40,12 +40,12 @@ Repare que estamos utilizando "thin arrow" -> e passamos entre chaves {} a açã
 
 Em casos onde a ação é realizada com apenas 1 linha, podemos simplificar para:
 
-```
+```java
 stringList.forEach(s -> System.out.println(s));
 ```
 Ou ainda:
 
-```
+```java
 stringList.forEach(System.out::println);
 ```
 
@@ -53,7 +53,7 @@ Lembre sempre da tipagem da lista e do seu método.
 
 Outra acao que pode ser feita utilizando a api de Streams e' filtrar uma lista utilizando o método *filter*, veja o exemplo abaixo:
 
-```
+```java
 stringList.stream().filter((s -> s.equals("Brasil"))).forEach(System.out::println);
 ```
 
@@ -62,7 +62,7 @@ Repare que o retorno do filter e' uma Stream de itens, então, é possível iter
 
 Também e' possível guardar o itens de um filter em um List, basta usar o código abaixo:
 
-```
+```java
 List<String> brasilList = stringList.stream().filter((s -> s.equals("Brasil"))).collect(Collectors.toList());
 ```
 
@@ -70,7 +70,7 @@ Como o método *filter* retornar um "Stream" é necessário transformar em um "L
 
 Podemo utilizar a Api de Streams para remover os itens duplicados de uma lista, simplesmente utilizando o método *distinct*:
 
-```
+```java
 stringList.stream().distinct().forEach(System.out::println);
 ```
 
@@ -78,24 +78,25 @@ O código acima ira remover todos os itens duplicados da lista e ira imprimir na
 
 Outra funcionalidade muito útil é transformar uma lista de um tipo para outro, para isso utilizamos o método *map*. No exemplo abaixo iremos transformar a nossa lista de string em uma lista de números:
 
-```
+```java
 stringList.stream().map((String::length)).forEach(System.out::println);
 ```
 
 E para guardar os itens retornados do map, simples:
 
-```
+```java
 List<Integer> integerStream = stringList.stream().map(String::length).collect(Collectors.toList());
 ```
 
 Por fim, nunca devemos esquecer que podemos chamar vários métodos da api de streams em sequencia:
 
-```
+```java
 stringList.stream().distinct().sorted().forEach(System.out::println);
 ```
+
 O código acima faz a seguinte ação: **dado uma lista de strings ele remove todo os itens duplicados utilizando *distinct* depois ordena com o método *sorted* e por fim imprime o resultado na tela.**
 
-Bom e' isso pessoal, essa foi uma passada bem básica na api de streams do Java 8, para saber mais, visite o link abaixo:
+Essa foi uma passada bem básica na api de streams do Java 8, para saber mais, visite o link abaixo:
 
 <http://www.oracle.com/technetwork/pt/articles/java/streams-api-java-8-3410098-ptb.html>
 

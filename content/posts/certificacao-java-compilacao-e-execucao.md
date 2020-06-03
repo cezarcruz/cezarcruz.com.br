@@ -15,7 +15,7 @@ Com o JDK é necessário usar um console, um prompt de comandos, para efetuar a 
 
 Para criarmos nosso primeiro programa, será necessário criar um arquivo texto com o nome *HelloWorld.java*, seu conteúdo deve ser conforme o texto abaixo.
 
-```
+```java
 public class HelloWorld {
     public static void main(String args[]) {
         System.out.println("Oi Mundo");
@@ -41,7 +41,7 @@ A extensão *.class* nao deve ser fornecida quando se executa um programa Java c
 
 Também é possível passar argumentos para um programa Java.
 
-```
+```java
 public class Echo {
     public static void main(String args[]) {
         for (String s: args) {

@@ -16,15 +16,20 @@ Uma variável é um nome definido pelo programador ao qual se associa um valor p
 
 O nome de uma variável, em Java, pode ser formado por uma letra, pelos caracteres _ (*underscore*), ou $ (cifrão). Nomes não podem conter outros símbolos gráficos, operadores ou espaços em branco, podendo ser longos, embora apenas os primeiros 32 caracteres sejam usados para distinguir. Lembrando que Java é *Case Sensitive*, letras minusculas e maiusculas são consideradas diferentes. Exemplos válidos:
 
-|   |       |   |        |      |       |
-|---|-------|---|--------|------|-------|
-| a | outro | x | _valor | $top | VALOR |
+* a
+* outro
+* x
+* _valor
+* $top
+* VALOR
 
 Exemplos inválidos:
 
-|    |            |           |      |       |
-|--- |---         |--------   |------|-------|
-| 1x | novo valor | sem-valor | void | super |
+* 1x
+* novo valor
+* sem-valor
+* void
+* super
 
 O Java possui um conjunto de palavras que indicam os nomes dos tipos primitivos, as diretivas da linguagem, os especificadores e modificadores e outros elementos pertencentes a sintaxe dessa linguagem. Essas palavras são reservadas e não podem ser utilizadas com outra finalidade:
 
@@ -40,7 +45,7 @@ Declarar uma variável é associar um tipo, um nome e um valor. Para isso deve s
 
 A especificação de um Tipo e ao menos um nome sao obrigatorios. Pode seguir opcionalmente uma lista de nomes, todos separados por vírgulas. A declaração é terminado por ; (ponto e vírgula). O Tipo pode ser um tipo primitivo, uma classe da API Java ou outra definida pelo programador. Exemplos:
 
-```
+```java
 int i;
 float total, preco;
 byte mascara;
@@ -49,7 +54,7 @@ double valorMedio;
 
 Variáveis de um mesmo tipo podem ser declaradas separadas ou em conjunto:
 
-```
+```java
 char op1;
 char op2;
 
@@ -58,7 +63,7 @@ char op3, op4;
 
 Também é possível definir um valor inicial para uma variável, o que é chamado de inicialização:
 
-```
+```java
 int i, quantidade = 0;
 float angulo = 1.57f, temp;
 double valor = 13.323;
@@ -70,7 +75,7 @@ Variáveis podem ser declaradas em qualquer ponto de um programa Java, sendo vá
 
 O conjunto dos locais no qual uma declaração tem validade é denominado escopo. Um bloco de comandos é um conjunto de comandos da linguagem delimitados por uma chave  inicial { e outra chave final }. A partir do ponto em que ocorreu a declaração de uma variável, é dito que a variável está em seu escopo, limitado ao bloco de comandos onde ocorreu essa declaração, mas incluindo escopos mais internos. Observe os vários escopos existentes abaixo:
 
-```
+```java
 public class Escopo { // inicio do bloco0
     public static void main(String args[]) { //inicio do bloco 1
         int i = 5; // variavel do bloco 1
@@ -105,7 +110,7 @@ Escopo.java:16: error: cannot find symbol
 
 A mensagem indica que na linha 16 do arquivo Escopo.java foi detectado um simbolo desconhecido (variavel j), pois, de fato, naquele escopo, (bloco 1 ou mais externos) não existe essa variável. Para corrigir o erro, a declaração da variável j deve ser movida para o início do bloco onde ocorreu o erro:
 
-```
+```java
 public class Escopo { // inicio do bloco0
     public static void main(String args[]) { //inicio do bloco 1
         int i = 5; // variavel do bloco 1

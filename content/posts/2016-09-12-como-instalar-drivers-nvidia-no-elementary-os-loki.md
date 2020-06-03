@@ -7,13 +7,12 @@ categories:
   - Linux
 tags:
   - Linux
-
 ---
 Olás,
 
 recentemente foi lançado a nova versão do Elementary OS, uma distribuição que tem como meta ser &#8220;Uma alternativa rápida e código aberto ao Windows e macOS&#8221;, após a instalação, como sempre, é necessário instalar os drivers da placa de vídeo, uma forma bem simples é executar esse comando:
 
-<pre class="lang:sh decode:true ">sudo ubuntu-drivers debug && sudo ubuntu-drivers autoinstall</pre>
+`sudo ubuntu-drivers debug && sudo ubuntu-drivers autoinstall`
 
 bem simples, após a conclusão da instalação, basta reiniciar a maquina e desfrutar. =)
 

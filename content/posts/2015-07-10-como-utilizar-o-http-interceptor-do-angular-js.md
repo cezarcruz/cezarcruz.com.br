@@ -36,7 +36,8 @@ Para o nosso exemplo, vou utilizar apenas o request e o responseError, para inse
 
 Primeiro vamos criar um factory:
 
-<pre class="lang:js decode:true">(function(){
+```javascript
+(function(){
 	angular.module('app', []).factory('Interceptor', Interceptor);
 
 	Interceptor.$inject = ['$q'];
@@ -44,24 +45,27 @@ Primeiro vamos criar um factory:
 	function Interceptor($q) {
 
 	}
-})();</pre>
+})();
+```
 
 Com o Interceptor criado, vamos adicionar as functions necessárias para interceptar as requisições:
 
-<pre class="lang:default decode:true">function Interceptor($q) {
-		return {
-			request: function(config) {
-				config.headers['X-TOKEN'] = "exemplo";
-				return config;
-			},
-			responseError: function(error) {
-				if (error.status === 401 || error.status === 403) {
-					//faz alguma coisa.
-				}
-				return $q.reject(error);
+```javascript
+function Interceptor($q) {
+	return {
+		request: function(config) {
+			config.headers['X-TOKEN'] = "exemplo";
+			return config;
+		},
+		responseError: function(error) {
+			if (error.status === 401 || error.status === 403) {
+				//faz alguma coisa.
 			}
-		};
-	}</pre>
+			return $q.reject(error);
+		}
+	};
+}
+```
 
 No request temos uma function que recebe um valor &#8220;config&#8221;, nele temos os dados da requisição, os headers, etc&#8230; No exemplo acima, adicionamos um header na requisição e damos um &#8220;return&#8221; com os dados alterados. Quando ele passa por esse interceptor, ele faz a alteração e o fluxo da requisição continua normalmente.
 
@@ -69,11 +73,13 @@ Já o responseError é executado quando obtemos uma resposta com o status 40x, q
 
 Mas pra isso funcionar ainda falta um passo importante, registrar o interceptor no Angular:
 
-<pre class="lang:default decode:true">angular.module('app').config(['$httpProvider', Interceptor]);
+```javascript
+angular.module('app').config(['$httpProvider', Interceptor]);
 
 function Interceptor($httpProvider) {
 	$httpProvider.interceptors.push('Interceptor');
-}</pre>
+}
+```
 
 Feito isso, todas as requisições $http irão passar pelo interceptor acima.
 

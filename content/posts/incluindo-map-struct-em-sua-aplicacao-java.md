@@ -125,11 +125,11 @@ public interface EnderecoMapper {
 
 ```
 
-@Mapper é utilizado para dizermos que esta interface é um mapper, a opção "componentModel" foi utilizada para dizer ao MapStruct que deve ser criar um "Bean" do spring para que possamos utilizar a Injeção de Dependencia do Spring. A configuração "componentModel" é opcional
+**@Mapper** é utilizado para dizermos que esta interface é um mapper, a opção "componentModel" foi utilizada para dizer ao MapStruct que deve ser criar um "Bean" do spring para que possamos utilizar a Injeção de Dependencia do Spring. A configuração "componentModel" é opcional
 
-@Mapping é utilizado para deixar explícito a conversão. Quando o nome das propriedades estão iguais o próprio MapStruct infere, mas quando está diferente, precisa ser especificado a origem e o destino, existem outra possibilidades, mas vamos explorar apenas o básico. Repare que o campo número são de tipos diferentes, o proprio MapStruct consegue fazer as conversões, é bem útil e ainda é possível especificar a conversão manualmente.
+**@Mapping** é utilizado para deixar explícito a conversão. Quando o nome das propriedades estão iguais o próprio MapStruct infere, mas quando está diferente, precisa ser especificado a origem e o destino, existem outra possibilidades, mas vamos explorar apenas o básico. Repare que o campo número são de tipos diferentes, o proprio MapStruct consegue fazer as conversões, é bem útil e ainda é possível especificar a conversão manualmente.
 
-@InheritInverseConfiguration faz a configuração inversa da conversão, deve ser utilizado quando existe um mapper com algum tipo de configuração específica.
+**@InheritInverseConfiguration** faz a configuração inversa da conversão, deve ser utilizado quando existe um mapper com algum tipo de configuração específica.
 
 Os métodos de list sabem utilizar a configuração criada nos métodos anteriores não sendo necessário nenhuma configuração extra.
 
@@ -230,7 +230,7 @@ public interface PessoaMapper {
 }
 ```
 
-@Mapper nessa classe ele foi implementado com um detalhe, o "uses", com isso dizemos ao MapStruct que não deve ser implementado um novo conversor para endereço mas utilizar o que mapper pronto.
+**@Mapper** nessa classe ele foi implementado com um detalhe, o "uses", com isso dizemos ao MapStruct que não deve ser implementado um novo conversor para endereço mas utilizar o que mapper pronto.
 
 Veja como ficou a classe gerada:
 

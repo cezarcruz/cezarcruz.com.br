@@ -7,7 +7,6 @@ categories:
   - Ruby
 tags:
   - Ruby
-
 ---
 Depois de instalar o Ruby (RubyInstaller) no Windows e tentar utilizar o comando:
 

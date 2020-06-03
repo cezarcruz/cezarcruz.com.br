@@ -7,10 +7,6 @@ menu: "main"
 
 Olá, seja bem vindo ao meu Blog.
 
-<p lang="zxx">
-  Meu nome é Cezar e desenvolvo para Web utilizando Java e Javascript, criei esse blog para compartilhar algumas coisas que vou aprendendo.
-</p>
+Meu nome é Cezar e desenvolvo para Web utilizando Java e Javascript, criei esse blog para compartilhar algumas coisas que vou aprendendo.
 
-<p lang="zxx">
-  Então, seja bem vindo e aproveite a viagem.
-</p>
+Então, seja bem vindo e aproveite a viagem.

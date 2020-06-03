@@ -19,6 +19,7 @@ disqusShortname = "cezarcruz"
     description = "um blog sobre programação"
     dateformat = "2 Jan 2006"
     post_meta = ["author", "date", "categories"]
+    opengraph = false # Enable OpenGraph if true
 
 [Taxonomies]
     tag = "tags"
@@ -30,8 +31,12 @@ disqusShortname = "cezarcruz"
     home = "right" # Configure layout for home page
     list = "right"  # Configure layout for list pages
     single = true # Configure layout for single pages
-    widgets = ["search", "recent", "categories", "taglist"]
+    widgets = ["search", "recent", "categories", "taglist", "social"]
 
 [Params.widgets]
     recent_num = 5 # Set the number of articles in the "Recent articles" widget
     tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+[Params.widgets.social]
+    github = "cezarcruz"
+    linkedin = "cezar-cruz"

@@ -1,8 +1,9 @@
 ---
 title: "Incluindo Lombok em sua aplicação Java"
-Categories: ["Java"]
+categories: ["Java"]
 date: 2019-07-25T11:20:28-03:00
 author: Cezar Cruz
+url: /post/incluindo-lombok-na-sua-aplicacao-java/
 ---
 
 Olá, no post de hoje, vamos ver como incluir o lombok na nossa aplicação Java.

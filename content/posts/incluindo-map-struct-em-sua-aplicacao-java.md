@@ -4,6 +4,7 @@ categories: ["Java", "MapStruct"]
 date: 2020-01-11T15:50:36-03:00
 author: Cezar Cruz
 url: /post/incluindo-map-struct-em-sua-aplicacao-java/
+images: ["img/header_java_og.png"]
 ---
 
 Olá, neste post veremos como incluindo o MapStruct em uma aplicação Java.

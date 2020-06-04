@@ -4,10 +4,11 @@ author: Cezar Cruz
 date: 2013-07-23T14:59:18+00:00
 url: /como-criar-um-repositorio-svn-no-dropbox/
 categories:
-  - SVN
+    - SVN
 tags:
-  - SVN
+    - SVN
 ---
+
 Um requisito básico para programar, talvez até antes de uma IDE, é uma forma de armazenar os códigos com segurança e se for com controle de versão, melhor ainda.
 
 <!--more-->
@@ -22,11 +23,11 @@ A instalação de ambos é bem simples, então iremos direto pra parte de criar 
 
 No Windows 7 e Windows 8 o software do Dropbox cria uma pasta no diretório do usuário, por exemplo:
 
-C:UsersusuárioDropbox
+C:\Users\usuário\Dropbox
 
 Nesse diretório que iremos criar nosso, repositório:
 
-Primeiro crie uma pasta com um nome qualquer, por exemplo &#8220;Repositório&#8221;, sem aspas 😉
+Primeiro crie uma pasta com um nome qualquer, por exemplo "Repositório", sem aspas 😉
 
 Dentro dela, clique com o botão direito do mouse, escolha a opção _TortoiseSVN_ e em seguida _Create respository here_
 
@@ -40,9 +41,9 @@ O TortoiseSVN irá criar a estrutura de diretórios abaixo
   <a href="http://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457591/resultado_ou0gwv.png"><img class="size-medium wp-image-105 aligncenter" alt="resultado" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_193,w_300/v1454457591/resultado_ou0gwv.png" width="300" height="192" /></a>
 </p>
 
-Clique na opção Create folder structure, para criar as pastas trunk, tags, branch&#8230;
+Clique na opção Create folder structure, para criar as pastas trunk, tags, branch...
 
-Repare que na figura temos um caminho selecionado, começando com file:///C:&#8230;. e é nesse endereço que está o pulo do gato, quando for abrir o repo browser ou for fazer um chekout/commit, basta acrescentar o caminho dessa forma
+Repare que na figura temos um caminho selecionado, começando com file:///C:.... e é nesse endereço que está o pulo do gato, quando for abrir o repo browser ou for fazer um chekout/commit, basta acrescentar o caminho dessa forma
 
 <p style="text-align: center;">
   <a href="http://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457589/abrindo_repo_br_pu6exf.png"><img class="size-medium wp-image-108 aligncenter" alt="abrindo_repo_br" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_103,w_300/v1454457589/abrindo_repo_br_pu6exf.png" width="300" height="103" /></a>

@@ -9,7 +9,7 @@ author: Cezar Cruz
 ---
 
 Olá,
-neste primeiro post iremos ver como escrever o nosso primeiro programa Java, como executar e como passar “parametros” para ele.
+neste primeiro post iremos ver como escrever o nosso primeiro programa Java, como executar e como passar “parâmetros” para ele.
 
 Com o JDK é necessário usar um console, um prompt de comandos, para efetuar a compilação ou execução de programas Java, além de compilar e executar, são disponibilizadas outras ferramentas no JDK. Nosso foco será apenas nos comando *javac* e *java*.
 
@@ -37,7 +37,7 @@ Para executar o programa *HelloWorld* é preciso acionar a JVM com o comando
 java HelloWorld
 ```
 
-A extensão *.class* nao deve ser fornecida quando se executa um programa Java com a JVM.
+A extensão *.class* não deve ser fornecida quando se executa um programa Java com a JVM.
 
 Também é possível passar argumentos para um programa Java.
 
@@ -52,11 +52,13 @@ public class Echo {
 ```
 
 Compilação
+
 ```
 javac Echo.java
 ```
 
 Execução
+
 ```
 java Echo a b c
 ```

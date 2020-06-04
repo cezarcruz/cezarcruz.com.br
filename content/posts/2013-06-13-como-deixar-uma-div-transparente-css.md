@@ -4,10 +4,11 @@ author: Cezar Cruz
 date: 2013-06-13T03:20:05+00:00
 url: /como-deixar-uma-div-transparente-css/
 categories:
-  - CSS
+    - CSS
 tags:
-  - CSS
+    - CSS
 ---
+
 Olás,
 
 aqui não é bem um tutorial, está mais para uma dica:
@@ -15,6 +16,7 @@ aqui não é bem um tutorial, está mais para uma dica:
 Se você quer deixar sua div transparente, você pode utilizar isso, por exemplo, pra deixar a imagem de background visível, deve ser inserido no seu css a seguinte regra:
 
 <!--more-->
+
 ```css
 .transparente{
 background: rgb(0, 0, 0) transparent;

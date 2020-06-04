@@ -4,10 +4,11 @@ author: Cezar Cruz
 date: 2013-07-23T17:07:31+00:00
 url: /dica-rapida-foundation-4-uma-alternativa-ao-bootsrap/
 categories:
-  - CSS
+    - CSS
 tags:
-  - CSS
+    - CSS
 ---
+
 Pra quem está cansado de usar o Twitter Bootstrap, não que ele seja ruim, muito pelo contrario, sugiro a utilização do Foundation 4.
 
 O Foundation 4 é uma biblioteca muito útil para padronizar a visualização de um site, ele é uma biblioteca bem completa, conheci a pouco tempo e comecei os estudos.

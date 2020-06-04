@@ -4,13 +4,13 @@ author: Cezar Cruz
 date: 2016-06-22T01:55:53+00:00
 url: /usando-component-no-angular-1-5/
 categories:
-  - Javascript
-  - AngularJS
+    - Javascript
+    - AngularJS
 tags:
-  - Javascript
-  - AngularJS
-
+    - Javascrip
+    - AngularJS
 ---
+
 Olá,
 
 Hoje vamos ver uma forma de usar uma nova funcionalidade do Angular 1, o component.
@@ -30,7 +30,7 @@ Para esse tutorial, o primeiro passo é criar um controller:
 })();
 ```
 
-Esse é um controller comum, que já estamos acostumados a criar no angular. O único ponto de atenção é quanto ao &#8216;this&#8217;, ao invés de utilizarmos &#8216;$scope&#8217;, podemos adicionar os valores direto no &#8216;this&#8217;, abaixo mostro como ele é carregado no template.
+Esse é um controller comum, que já estamos acostumados a criar no angular. O único ponto de atenção é quanto ao "this", ao invés de utilizarmos '$scope';, podemos adicionar os valores direto no "this", abaixo mostro como ele é carregado no template.
 
 Agora que temos um controller, vamos criar um template para mostrar o nosso valor na tela:
 
@@ -38,7 +38,7 @@ Agora que temos um controller, vamos criar um template para mostrar o nosso valo
 {{ ::vm.valor }}
 ```
 
-No nosso arquivo &#8216;home.html&#8217;, usamos a mesmas sintaxe que estamos acostumados, repare que usamos o &#8216;vm&#8217; antes da variável que declaramos no controller, no código abaixo mostro o motivo ;).
+No nosso arquivo 'home.html';, usamos a mesmas sintaxe que estamos acostumados, repare que usamos o 'vm'; antes da variável que declaramos no controller, no código abaixo mostro o motivo ;).
 
 Depois de criarmos o controller e a view, vamos finalmente criar o nosso component, veja:
 
@@ -49,17 +49,17 @@ angular.module('home-module').component('homeModule', {
 });
 ```
 
-Para criarmos o component, basta colocar o &#8216;.component&#8217; no modulo, como parâmetros, ele recebe o nome e um objeto com as configurações do componente. O nome do componente segue o mesmo padrão das diretivas:
+Para criarmos o component, basta colocar o '.component'; no modulo, como parâmetros, ele recebe o nome e um objeto com as configurações do componente. O nome do componente segue o mesmo padrão das diretivas:
 
 Nome: **homeModule**
 
 Referencia em outras partes da aplicação: **home-module**
 
-O parâmetro &#8216;templateUrl&#8217; passamos o caminho da view que criamos anteriormente. Podemos também, substituir esse parâmetro por &#8216;templatle&#8217; e colocar a view diretamente inline, para algo pequeno, me parece muito bom.
+O parâmetro 'templateUrl'; passamos o caminho da view que criamos anteriormente. Podemos também, substituir esse parâmetro por 'templatle'; e colocar a view diretamente inline, para algo pequeno, me parece muito bom.
 
-Por fim, o parâmetro &#8216;controller&#8217;, que como o nome sugere, injetamos o controller no nosso component, repare que adicionamos os valores &#8216;as vm&#8217; junto ao controller, é assim que definimos que o &#8216;this&#8217;, do controller, é referenciado na view como &#8216;vm&#8217;, se adicionarmos apenas o nome do controller, o Angular infere que você irá utilizar &#8216;$ctrl&#8217; na view.
+Por fim, o parâmetro 'controller';, que como o nome sugere, injetamos o controller no nosso component, repare que adicionamos os valores 'as vm'; junto ao controller, é assim que definimos que o 'this';, do controller, é referenciado na view como 'vm';, se adicionarmos apenas o nome do controller, o Angular infere que você irá utilizar '$ctrl'; na view.
 
-E por fim, para adicionarmos nosso component na aplicação, podemos fazer igual faríamos normalmente com uma diretiva &#8216;<home-module></home-module>&#8217; ou adicionar ele como uma uma rota, assim:
+E por fim, para adicionarmos nosso component na aplicação, podemos fazer igual faríamos normalmente com uma diretiva '<home-module></home-module>'; ou adicionar ele como uma uma rota, assim:
 
 ```javascript
 $routeProvider.when('/home', {
@@ -67,7 +67,7 @@ $routeProvider.when('/home', {
 });
 ```
 
-E&#8217; isso ai, simples e fácil.
+E'; isso ai, simples e fácil.
 
 Espero que ajude, abraços!
 

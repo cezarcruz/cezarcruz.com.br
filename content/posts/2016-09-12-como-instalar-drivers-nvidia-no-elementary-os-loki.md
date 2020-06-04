@@ -4,13 +4,14 @@ author: Cezar Cruz
 date: 2016-09-12T14:01:11+00:00
 url: /como-instalar-drivers-nvidia-no-elementary-os-loki/
 categories:
-  - Linux
+    - Linux
 tags:
-  - Linux
+    - Linux
 ---
+
 Olás,
 
-recentemente foi lançado a nova versão do Elementary OS, uma distribuição que tem como meta ser &#8220;Uma alternativa rápida e código aberto ao Windows e macOS&#8221;, após a instalação, como sempre, é necessário instalar os drivers da placa de vídeo, uma forma bem simples é executar esse comando:
+recentemente foi lançado a nova versão do Elementary OS, uma distribuição que tem como meta ser "Uma alternativa rápida e código aberto ao Windows e macOS", após a instalação, como sempre, é necessário instalar os drivers da placa de vídeo, uma forma bem simples é executar esse comando:
 
 `sudo ubuntu-drivers debug && sudo ubuntu-drivers autoinstall`
 

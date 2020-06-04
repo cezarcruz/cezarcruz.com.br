@@ -4,12 +4,13 @@ author: Cezar Cruz
 date: 2013-07-26T13:27:09+00:00
 url: /como-usar-javascript-e-css-no-cakephp/
 categories:
-  - PHP
-  - CakePHP
+    - PHP
+    - CakePHP
 tags:
-  - PHP
-  - CakePHP
+    - PHP
+    - CakePHP
 ---
+
 Olá, hoje mais uma dica sobre CakePHP, vou ensinar como colocar CSS e Javascript corretamente no seu projeto CakePHP.
 
 <!--more-->

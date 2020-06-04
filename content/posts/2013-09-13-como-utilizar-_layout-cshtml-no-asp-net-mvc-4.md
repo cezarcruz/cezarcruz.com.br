@@ -4,10 +4,11 @@ author: Cezar Cruz
 date: 2013-09-13T12:37:24+00:00
 url: /como-utilizar-_layout-cshtml-no-asp-net-mvc-4/
 categories:
-  - NET
+    - NET
 tags:
-  - NET
+    - NET
 ---
+
 Nesse tutorial vamos aprender como utilizar o arquivo de _Layout.cshtml no nosso <a href="/criando-o-primeiro-projeto-aspnet-mvc-com-csharp/" target="_blank">primeiro projeto MVC 4</a>.
 
 Assim como no Web Forms com seu Master Page, o MVC tem o seu arquivo master também, porém ele é chamado de _Layout.cshtml, nele colocamos nosso layout padrão de páginas.
@@ -18,8 +19,8 @@ Assim como no Web Forms com seu Master Page, o MVC tem o seu arquivo master tamb
 
 Para começarmos a utilizar um layout padrão nas nossas páginas devemos criar dois arquivos cshtml:
 
-  * _ViewStart.cshtml: na raiz da pasta View do projeto;
-  * _Layout.cshtml: dentro da pasta Shared que por sua vez está dentro da pasta View;
+* _ViewStart.cshtml: na raiz da pasta View do projeto;
+* _Layout.cshtml: dentro da pasta Shared que por sua vez está dentro da pasta View;
 
 O arquivo _ViewStart.cshtml contem apenas uma referencia para nosso layout, pois ele sera processado antes de chamar a View, podemos incluir lógica nesse arquivo, por exemplo, pra carregar um layout pra mobile quando vier uma requisição de um navegador mobile. O arquivo deve ficar assim:
 
@@ -49,13 +50,13 @@ Pra criamos um layout dinâmico, o primeiro passo é modelar ele estático, depo
 
         <!-- Rodapé -->
         <footer>
-            &copy; 2013
+            © 2013
         </footer>
     </body>
 </html>
 ```
 
-Está ai a definição do nosso layout (^^), claro que isso é apenas para fins de tutorial, agora que temos nosso layout definido, hora de deixar ele um pouco mais &#8220;esperto&#8221;:
+Está ai a definição do nosso layout (^^), claro que isso é apenas para fins de tutorial, agora que temos nosso layout definido, hora de deixar ele um pouco mais "esperto":
 
 No tag head, trocamos os dados por esse:
 
@@ -65,7 +66,7 @@ No tag head, trocamos os dados por esse:
 <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
 ```
 
-A linha 2 é a variavel com o titulo da View que está sendo carregado, o valor dessa variável pode ser definida tanto no controller como na propria View;
+A linha 2 é a variavel com o titulo da View que está sendo carregado, o valor dessa variável pode ser definida tanto no controller como na própria View;
 
 A linha 3 é o link para o css que iremos utilizar aqui.
 
@@ -73,14 +74,13 @@ Agora definimos nosso rodapé:
 
 ```html
 <footer>
-      &copy; @DateTime.Now.Year
+      © @DateTime.Now.Year
 </footer>
 ```
 
 Bem simples, o único processamento do servidor será pra exibir o ano corrente.
 
 E agora o mais importante, onde queremos que nossa View apareça no layout:
-
 
 ```html
 <div id="main">
@@ -107,7 +107,7 @@ O resultado final do _Layout.cshtml ficou assim:
             @RenderBody()
         </div>
         <footer>
-            &copy; @DateTime.Now.Year
+            © @DateTime.Now.Year
         </footer>
     </body>
 </html>
@@ -149,7 +149,7 @@ O ultimo arquivo a ser renderizado é o [View].cshtml, ou seja, se definirmos o 
         </div>
 
         <footer>
-            &copy; 2013
+            © 2013
         </footer>
     </body>
 </html>

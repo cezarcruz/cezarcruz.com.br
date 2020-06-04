@@ -4,22 +4,21 @@ author: Cezar Cruz
 date: 2013-06-13T15:29:38+00:00
 url: /saber-qual-e-o-navegador-usando-php/
 categories:
-  - PHP
+    - PHP
 tags:
-  - PHP
-
+    - PHP
 ---
+
 Dica rápida para descobrir qual navegador está acessando sua aplicação **php**:
 
+```php
 <?php
-
-$navegador = $\_SERVER[&#8216;HTTP\_USER_AGENT&#8217;];
-
-echo $navegado;
-
+$navegador = $\_SERVER['HTTP\_USER_AGENT'];
+echo $navegador;
 ?>
+```
 
-A variável $navegador guarda a informação de **$\_SERVER[&#8216;HTTP\_USER_AGENT&#8217;],** que é ecoada na linha abaixo.
+A variável $navegador guarda a informação de **$_SERVER['HTTP_USER_AGENT'],** que é ecoada na linha abaixo.
 
 O array **$_SERVER[]** contem algumas informações uteis, todas descritas aqui: <a title="aqui" href="http://php.net/manual/pt_BR/reserved.variables.server.php" target="_blank">http://php.net/manual/pt_BR/reserved.variables.server.php</a>
 
@@ -38,5 +37,3 @@ As saídas padrão são:
 **** Saber o navegador do usuário pode ser útil para traçar perfil dos visitantes do seu site, carregar **css** ou **javascripts** diferentes ou mesmo proibir acesso ao sistema para determinados navegadores.
 
 É isso ai, té mais.
-
-&nbsp;

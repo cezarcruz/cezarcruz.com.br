@@ -4,19 +4,20 @@ author: Cezar Cruz
 date: 2013-06-18T12:33:16+00:00
 url: /tutorial-basico-usando-cakephp-windows-eclipse-parte1/
 categories:
-  - PHP
-  - CakePHP
+    - PHP
+    - CakePHP
 tags:
-  - PGP
-  - CakePHP
+    - PGP
+    - CakePHP
 ---
-[<img class="alignnone size-full wp-image-42" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457626/cake-logo_ns8tdv.png" alt="cake-logo" width="180" height="180" />][1]
+
+<img class="alignnone size-full wp-image-42" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457626/cake-logo_ns8tdv.png" alt="cake-logo" width="180" height="180" />
 
 Olá, nesse tutorial gostaria de ensinar de uma forma bem básica, como rodar o Framework CakePHP no Windows e escrever algum código usando o Eclipse.
 
 Bora lá:
 
-O CakePHP é um framework PHP(dãããã) que utiliza MVC, poderia perder bastante tempo falando dos beneficios de usar um Framework e MVC, mas essa não é a intenção do post, de qualquer forma, de uma olhada <a href="http://blog.glaucocustodio.com/2012/07/31/porque-usar-um-framework/" target="_blank">aqui</a> e <a href="http://pt.wikipedia.org/wiki/MVC" target="_blank">aqui</a>.
+O CakePHP é um framework PHP(dãããã) que utiliza MVC, poderia perder bastante tempo falando dos benefícios de usar um Framework e MVC, mas essa não é a intenção do post, de qualquer forma, de uma olhada <a href="http://blog.glaucocustodio.com/2012/07/31/porque-usar-um-framework/" target="_blank">aqui</a> e <a href="http://pt.wikipedia.org/wiki/MVC" target="_blank">aqui</a>.
 
 <!--more-->
 
@@ -32,7 +33,7 @@ O proximo passo é baixar o CakePHP.
 
 O CakePHP você encontra <a href="http://cakephp.org/" target="_blank">aqui</a>, e a documentação você encontra <a href="http://book.cakephp.org/2.0/en/index.html" target="_blank">aqui.</a>
 
-Agora basta baixar o CakePHP e colocar no diretório www do Wamp (C:wampwww), no momento a versão atual é a 2.3.6 e seu diretório do CakePHP irá ficar assim: C:wampwwwcakephp-cakephp-b81c198. (Quando abrirmos o CakePHP no Eclipse, falarei um pouco mais da estrutura de diretórios do framework)
+Agora basta baixar o CakePHP e colocar no diretório www do Wamp (C:wampwww), no momento a versão atual é a 2.3.6 e seu diretório do CakePHP irá ficar assim: C:\wamp\www\cakephp-cakephp-b81c198. (Quando abrirmos o CakePHP no Eclipse, falarei um pouco mais da estrutura de diretórios do framework)
 
 Agora, altere o nome da pasta cakephp-cakephp-b81c198 para cake, e acesse via http://localhost/cake e a tela abaixo irá aparecer:
 
@@ -46,11 +47,9 @@ Se a tela aparece dessa forma, significa que o module rewrite do apache não est
   <a href="http://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457623/wamp_painel_controle_dof4xf.png"><img class="size-medium wp-image-45 aligncenter" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_272,w_300/v1454457623/wamp_painel_controle_dof4xf.png" alt="wamp_painel_controle" width="300" height="272" /></a>
 </p>
 
-&nbsp;
-
 Agora, clique em Apache modules e procure por rewrite\_module, clique nele e aguarde o wamp reiniciar para que as configurações sejam válidas. (O rewrite\_module é utilizado para criar url amigáveis ou personalizadas)
 
-Agora teremos o CakePHP funcionando &#8220;quase&#8221; que completamente, nossa tela será a seguinte:
+Agora teremos o CakePHP funcionando "quase" que completamente, nossa tela será a seguinte:
 
 <p style="text-align: center;">
   <a href="http://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457621/tela_inicial_cake_2_efuc7i.png"><img class="size-medium wp-image-49 aligncenter" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_163,w_300/v1454457621/tela_inicial_cake_2_efuc7i.png" alt="tela_inicial_cake_2" width="300" height="162" /></a>
@@ -66,9 +65,9 @@ Com o Eclipse aberto, clicar em File, New, Php Project:
   <a href="http://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457618/eclipse_novo_projeto_dnn3tv.png"><img class="size-medium wp-image-51 aligncenter" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_300,w_266/v1454457618/eclipse_novo_projeto_dnn3tv.png" alt="eclipse_novo_projeto" width="266" height="300" /></a>
 </p>
 
-  1. Nesse textbox, coloque o nome do Projeto, para o tutorial sujiro utlizar cake, com letras minusculas 😉
-  2. Aqui você deve selecionar o diretório raiz do cake, no nosso caso, C:wampwwwcake
-  3. Feito as devidas configurações, clique em Finish.
+1. Nesse textbox, coloque o nome do Projeto, para o tutorial sugiro utilizar cake, com letras minusculas 😉
+2. Aqui você deve selecionar o diretório raiz do cake, no nosso caso, C:\wamp\www\cake
+3. Feito as devidas configurações, clique em Finish.
 
 E agora teremos nosso projeto criado e pronto para começarmos
 
@@ -80,10 +79,10 @@ Nossa primeira alteração será para corrigirmos o erros exibidos na pagina ini
 
 Abrar o arquivos core.php que fica em Cake->app->Config, e altere o valor do **Security.salt** e do **Security.cipherSeed:**
 
-`<br />
-Configure::write('Security.salt', 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');`
-
-Configure::write(&#8216;Security.cipherSeed&#8217;, &#8216;76859309657453542496749683645&#8217;);
+```php
+Configure::write('Security.salt', 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');
+Configure::write('Security.cipherSeed', '76859309657453542496749683645');
+```
 
 Esses carinhas são utilizados na criptografia do CakePHP e devem ser alterados, para que não utilizem o valor padrão do CakePHP. No Security,salt você pode utilizar qualquer valor que seja número ou letra e no Security.cipherSeed você deve utilizar apenas números. Não esqueça de salvar o arquivos.
 

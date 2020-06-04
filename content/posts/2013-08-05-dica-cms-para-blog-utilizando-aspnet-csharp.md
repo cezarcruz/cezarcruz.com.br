@@ -4,10 +4,11 @@ author: Cezar Cruz
 date: 2013-08-05T18:53:22+00:00
 url: /dica-cms-para-blog-utilizando-aspnet-csharp/
 categories:
-  - NET
+- NET
 tags:
-  - NET
+- NET
 ---
+
 O CMS que irei mostrar aqui é o BlogEngine, feito em CSharp e roda no IIS, uma boa alternativa ao WordPress para que usar servidor Windows.
 
 O BlogEngine é uma ferramenta grátis para criação de blogs, que utiliza ASP.NET/CSharp no seu código fonte e para o armazenamento de dados utiliza como padrão arquivos XML.
@@ -16,15 +17,13 @@ O BlogEngine é uma ferramenta grátis para criação de blogs, que utiliza ASP.
 
 Tem todos os recursos necessários para criação e manutenção de um blog:
 
-  * Posts
-  * Criação de páginas estáticas
-  * Widgets
-  * Temas (Aqui cabe uma obs.: é bem simples criar ou personalizar seu próprio tema)
+* Posts
+* Criação de páginas estáticas
+* Widgets
+* Temas (Aqui cabe uma obs.: é bem simples criar ou personalizar seu próprio tema)
 
 O BlogEngine tem uma interface simples e não tem instalação, basta colocar os arquivos no seu servidor web, logar e começar a postar.
 
 O site do projeto está aqui: <http://www.dotnetblogengine.net/>
 
 O download da versão 2.8, que é atual no momento, pode ser encontrado aqui: <http://blogengine.codeplex.com/releases/view/105425>
-
-&nbsp;

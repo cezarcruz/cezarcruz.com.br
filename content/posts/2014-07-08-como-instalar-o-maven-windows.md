@@ -1,12 +1,13 @@
 ---
+
 title: Como instalar o Maven no Windows
 author: Cezar Cruz
 date: 2014-07-08T14:38:57+00:00
 url: /como-instalar-o-maven-windows/
 categories:
-  - Maven
+    - Maven
 tags:
-  - Maven
+    - Maven
 ---
 Olás, depois de um tempo parado, voltamos com um post ensinando como instalar o Maven.
 
@@ -20,13 +21,17 @@ Após a conclusão do download, descompacte os arquivos, pra esse tutorial iremo
 
 [<img class="wp-image-379 size-medium" src="https://res.cloudinary.com/cezarcruz-com-br/image/upload/h_300,w_244/v1454457569/Propriedades-do-sistema_bs5ku1.png" alt="Propriedades do sistema" width="244" height="300" />][2]<figcaption class="wp-caption-text">Janela de propriedades do sistema</figcaption></figure> <figure id="attachment_380" style="width: 273px" class="wp-caption aligncenter">[<img class="wp-image-380 size-medium" src="https://res.cloudinary.com/cezarcruz-com-br/image/upload/h_300,w_273/v1454457567/Variaveis_de_ambiente_enmiij.png" alt="Variaveis_de_ambiente" width="273" height="300" />][3]<figcaption class="wp-caption-text">Janela de variáveis de ambiente.</figcaption></figure>
 
-Na janela Variáveis de ambiente, no grupo Variáveis do sistema, devemos adicionar uma nova variável chamada M2_HOME, tudo em maiúsculo, o campo valor da variavel deve ser o caminho de instalação do Maven, no nosso caso C:devapache-maven-3.2.2<figure id="attachment_381" style="width: 300px" class="wp-caption aligncenter">
+Na janela Variáveis de ambiente, no grupo Variáveis do sistema, devemos adicionar uma nova variável chamada M2_HOME, tudo em maiúsculo, o campo valor da variavel deve ser o caminho de instalação do Maven, no nosso caso C:devapache-maven-3.2.2
 
-[<img class="wp-image-381 size-medium" src="https://cezarcruz.com.br/wp-content/uploads/2014/07/nova_variavel_de_sistema-300x129.png" alt="nova_variavel_de_sistema" width="300" height="129" />][4]<figcaption class="wp-caption-text">Janela nova variável de sistema</figcaption></figure>
 
-Agora já está tudo instalado e configurado, o próximo passo é testar, para isso, basta abrirmos uma janela de comando (dos) e digitar o comando mvn, o resultado dever ser igual o abaixo:<figure id="attachment_382" style="width: 300px" class="wp-caption aligncenter">
 
-[<img class="size-medium wp-image-382" src="https://cezarcruz.com.br/wp-content/uploads/2014/07/tela_comando_mvn-300x58.png" alt="Saida do comando mvn" width="300" height="58" />][5]<figcaption class="wp-caption-text">Saida do comando mvn</figcaption></figure>
+<img class="wp-image-381 size-medium" src="https://cezarcruz.com.br/wp-content/uploads/2014/07/nova_variavel_de_sistema-300x129.png" alt="nova_variavel_de_sistema" width="300" height="129" />
+
+
+
+Agora já está tudo instalado e configurado, o próximo passo é testar, para isso, basta abrirmos uma janela de comando (dos) e digitar o comando mvn, o resultado dever ser igual o abaixo:
+
+<img class="size-medium wp-image-382" src="https://cezarcruz.com.br/wp-content/uploads/2014/07/tela_comando_mvn-300x58.png" alt="Saida do comando mvn" width="300" height="58" />
 
 Depois disso, é só usar.
 

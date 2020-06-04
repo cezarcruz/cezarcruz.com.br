@@ -9,13 +9,13 @@ categories:
 tags:
   - JavaScript
   - AngularJS
-
 ---
+
 Olá, hoje vou escrever um post bem básico de como utilizar **Angular.JS** no seu próximo projeto.
 
 <!--more-->
 
-Pra quem não sabe, o Angular.JS é um framework javascript MV*(C), feito pelo google para basicamente &#8220;deixar seu **html** dinâmico&#8221;, ou seja, com algumas tags no seu **HTML** será possível fazer atualização de dados, por exemplo.
+Pra quem não sabe, o Angular.JS é um framework javascript MV*(C), feito pelo google para basicamente "deixar seu **html** dinâmico", ou seja, com algumas tags no seu **HTML** será possível fazer atualização de dados, por exemplo.
 
 Chega de papo, para mais informações nerds, acesse o [site do agunlar.][1]
 
@@ -82,10 +82,10 @@ Por ultimo um exemplo que mostra uma pontinha do potencial do **Angular.JS**, ve
 
 Podemos ver as seguintes alterações:
 
-  * Alteramos o ng-app no elemento HTML para o valor meuApp;
-  * Alteramos o JavaScript, nele criamos o &#8220;meuApp&#8221;, que eh um module do Angular;
-  * Em seguida, criamos o controller &#8220;HomeCtrl&#8221; e setamos o valor da variável &#8220;Valor&#8221;;
-  * Criamos uma nova div com o valor de ng-controller setado para &#8220;HomeCtrl&#8221;, isso significa que tudo que está dentro da div, refere apenas ao que está na criação do controller no javascript.
+* Alteramos o ng-app no elemento HTML para o valor meuApp;
+* Alteramos o JavaScript, nele criamos o "meuApp", que eh um module do Angular;
+* Em seguida, criamos o controller "HomeCtrl" e setamos o valor da variável "Valor";
+* Criamos uma nova div com o valor de ng-controller setado para "HomeCtrl", isso significa que tudo que está dentro da div, refere apenas ao que está na criação do controller no javascript.
 
 > Atenção ao $scope, ele é o cara que devemos setar o valor do ng-model.
 

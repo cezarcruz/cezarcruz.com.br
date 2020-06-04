@@ -4,10 +4,11 @@ author: Cezar Cruz
 date: 2013-10-01T18:23:53+00:00
 url: /utilizando-multi-idiomas-no-php-codeigniter/
 categories:
-  - PHP
+    - PHP
 tags:
-  - PHP
+    - PHP
 ---
+
 ## Esse é o primeiro post falando de **CodeIginiter**.
 
 Vamos lá, nesse tutorial vamos tentar aprender como utilizar o multi idioma em uma aplicação utilizando **CodeIginiter**, daqui pra frente, apenas CI.
@@ -39,14 +40,14 @@ A nomenclatura padrão dos arquivos de idiomas é **nome_lang.php,** para o noss
 ```php
 <?php
         $lang['title'] = "Titulo";
-	$lang['first_name'] = "Primeiro nome";
-	$lang['last_name'] = "Ultimo nome";
-	$lang['date'] = "data";
+    $lang['first_name'] = "Primeiro nome";
+    $lang['last_name'] = "Ultimo nome";
+    $lang['date'] = "data";
 
 ?>
 ```
 
-Agora, para utilizarmos ele é tão simples quanto a sua criação, basta carregar ele com essa &#8220;enorme&#8221; linha de código:
+Agora, para utilizarmos ele é tão simples quanto a sua criação, basta carregar ele com essa "enorme" linha de código:
 
 ```php
 $this->lang->load("app","portuguese");
@@ -61,7 +62,7 @@ public function __construct() {
    }
 ```
 
->  Repare que utilizamos apenas o nome do arquivo, &#8220;app&#8221;, o resto o CI que preenche.
+>  Repare que utilizamos apenas o nome do arquivo, "app", o resto o CI que preenche.
 
 Agora que carregamos ele no nosso Controller, vamos utilizar ele:
 

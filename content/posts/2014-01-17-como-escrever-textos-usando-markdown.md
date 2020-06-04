@@ -4,10 +4,12 @@ author: Cezar Cruz
 date: 2014-01-17T14:36:48+00:00
 url: /como-escrever-textos-usando-markdown/
 categories:
-  - Markdown
+   - Markdown
 tags:
-  - Markdown
+    - Markdown
+
 ---
+
 Olás, nesse tutorial, vou mostrar como utilizarmos o **Markdown** para escrevermos textos formatados em Html. Esse tutorial será, basicamente, um spin-off da saga Jekyll.
 
 **Markdown** é uma ferramenta de conversão texto pra HTML para escrever textos para web. **Markdown** permite escrever usando um texto fácil de ler e escrever e depois converte em uma estrutura valida de XHTML (ou HTML). Pra uma definição melhor, veja o [site do projeto][1].
@@ -58,6 +60,7 @@ E o resultado é:
 <h2>Subtítulo</h2>
 <h3>SubSubtítulo</h3>
 ```
+
 Para escrevermos um texto, também é bem simples, o que devemos atentar é que pra começarmos um novo paragrafo, devemos deixar uma linha em branco no final da linha:
 
 ```md
@@ -132,7 +135,7 @@ O resultado:
 </ul>
 ```
 
-Além do * (asterisco), podemos utilizar o sinal de + (soma) ou &#8211; (subtração) pra formarmos uma lista.
+Além do * (asterisco), podemos utilizar o sinal de + (soma) ou - (subtração) pra formarmos uma lista.
 
 Pra termos uma lista ordenada, segue a mesma ideia da lista não ordenada:
 
@@ -146,7 +149,6 @@ Lista de compras
 ```
 
 E resultado:
-
 
 ```html
 <p>Lista de compras</p>
@@ -223,10 +225,10 @@ O Resultado segue como de costume:
 
 Pra utilizarmos referencias em links, temos que atentar aos fatos:
 
-  * O que estiver entre os primeiros colchetes é o que irá se tornar &#8220;clicável&#8221;;
-  * O segundo colchetes é a referencia, nela, podemos utilizar uma letra ou palavra e elas não são _case sensitive_;
-  * No local onde deixamos organizada as referencias, temos de colocar : (dois pontos) depois dos colchetes pra que funcione corretamente;
-  * Não esquecer de por **http://**;
+* O que estiver entre os primeiros colchetes é o que irá se tornar "clicável";
+* O segundo colchetes é a referencia, nela, podemos utilizar uma letra ou palavra e elas não são _case sensitive_;
+* No local onde deixamos organizada as referencias, temos de colocar : (dois pontos) depois dos colchetes pra que funcione corretamente;
+* Não esquecer de por **http://**;
 
 Pra utilizarmos imagens, o código é semelhante ao de links:
 
@@ -248,9 +250,9 @@ Abraços.
 
 Links úteis
 
-  * [Markdown editor online][3]
-  * [Site oficial do Markdown][4]
-  * [Jekyll beeeeem básico][5]
+* [Markdown editor online][3]
+* [Site oficial do Markdown][4]
+* [Jekyll beeeeem básico][5]
 
  [1]: http://daringfireball.net/projects/markdown/
  [2]: https://github.com/

@@ -1,13 +1,15 @@
 ---
+
 title: Como adicionar o Lightbox em um site utilizando CakePHP
 author: Cezar Cruz
 date: 2014-04-19T14:50:41+00:00
 url: /como-adicionar-o-lightbox-em-um-site-utilizando-cakephp/
 categories:
-  - JavaScript
+    - JavaScript
 tags:
-  - JavaScript
+    - JavaScript
 ---
+
 Olás,
 
 Hoje vamos com uma dica simples e usual: Como utilizar o Lightbox, [aquele plugin JQuery para imagens/galeria][1], com o CakePHP.
@@ -24,30 +26,28 @@ A chamada para os arquivos de CSS e Javascript devem ficar assim:
 
 No código acima podemos ver:
 
-  1. A chamada pra exibir o css do Lightbox;
-  2. A chamada pro JQuery 2.1.0 nos servidores do Google =D;
-  3. A chamada para o arquivo Javascript do Lightbox
+1. A chamada pra exibir o css do Lightbox;
+2. A chamada pro JQuery 2.1.0 nos servidores do Google =D;
+3. A chamada para o arquivo Javascript do Lightbox
 
 Feito isso, já estamos na metade do caminho, o próximo passo, é colocar as imagens que serão exibidas.
 
 Veja como irá ficar a nossa View que irá exibir as fotos:
 
-&nbsp;
-
 ```php
 echo $this->Html->link(
-	 $this->Html->image($fotos['Foto']['caminho'], array('class' => 'class_img')),
-	 $fotos['Foto']['caminho'],
-	 array('escapeTitle' => false, 'title' => $fotos['Foto']['alt'], 'data-lightbox'=> 'roadtrip', 'class' => 'class_url')
+     $this->Html->image($fotos['Foto']['caminho'], array('class' => 'class_img')),
+     $fotos['Foto']['caminho'],
+     array('escapeTitle' => false, 'title' => $fotos['Foto']['alt'], 'data-lightbox'=> 'roadtrip', 'class' => 'class_url')
 );
 ```
 
-Explicando o código (Acho que vou criar um categoria, &#8220;_explicando o código_&#8221; hahahahahah) :
+Explicando o código (Acho que vou criar um categoria, "_explicando o código_" hahahahahah) :
 
-  1. Utilizaremos o método link do Helper Html do CakePhp;
-  2. Dentro do método Html, iremos colocar o método image, também do Helper Html (Aqui podemos utilizar a forma padrão, primeiro com o caminho da imagem, e depois os parâmetros adicionais dentro de um array, como é feito de costume), aqui, sugiro que utilize um thumbnail;
-  3. Na 3° linha, temos novamente o caminho da imagem, é ali que o link irá apontar pra imagem que ira ser aberta no modal;
-  4. N 4° linha, temos os parâmetros finais do link, o title é o que irá aparecer na legenda da imagem quando ela for aberta no modal, o mais importate é o &#8216;data-lightbox&#8217;, esse parâmetro que será utilizado para ativar o Lightbox;
+1. Utilizaremos o método link do Helper Html do CakePhp;
+2. Dentro do método Html, iremos colocar o método image, também do Helper Html (Aqui podemos utilizar a forma padrão, primeiro com o caminho da imagem, e depois os parâmetros adicionais dentro de um array, como é feito de costume), aqui, sugiro que utilize um thumbnail;
+3. Na 3° linha, temos novamente o caminho da imagem, é ali que o link irá apontar pra imagem que ira ser aberta no modal;
+4. N 4° linha, temos os parâmetros finais do link, o title é o que irá aparecer na legenda da imagem quando ela for aberta no modal, o mais importate é o "data-lightbox", esse parâmetro que será utilizado para ativar o Lightbox;
 
 A partir daqui, use a criatividade e seja feliz =D.
 

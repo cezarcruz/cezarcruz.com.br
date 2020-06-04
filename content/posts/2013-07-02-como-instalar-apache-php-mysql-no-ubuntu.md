@@ -4,15 +4,16 @@ author: Cezar Cruz
 date: 2013-07-02T15:54:23+00:00
 url: /como-instalar-apache-php-mysql-no-ubuntu/
 categories:
-  - LAMP
+    - LAMP
 tags:
-  - LAMP
+    - LAMP
 ---
+
 Olás, nesse tutorial veremos como instalar e configurar o Ubuntu para rodar nossos sites em PHP.
 
 <!--more-->
 
-Aqui uma grande surpresa minha, é muito mais fácil instalar e rodar o PHP no Linux do que no Windows, é claro que o Windows tem os famosos pacotes &#8220;Wamp&#8221; que facilitam bastante, mas caso queira instalar separadamente o PHP, Apache e MySQL, ai é outra história, mas vamos lá, os passos são bem simples, primeiro, abra o Terminal e digite:
+Aqui uma grande surpresa minha, é muito mais fácil instalar e rodar o PHP no Linux do que no Windows, é claro que o Windows tem os famosos pacotes "Wamp" que facilitam bastante, mas caso queira instalar separadamente o PHP, Apache e MySQL, ai é outra história, mas vamos lá, os passos são bem simples, primeiro, abra o Terminal e digite:
 
 `sudo apt-get install apache2`
 
@@ -23,11 +24,11 @@ Esse comando irá instalar o apache, lembrando que o computador deve estar conec
 </p>
 
 > Não esqueça de dar permissão de escrita na pastar /var/www para o seu usuário, da seguinte forma:
->
+> 
 > `sudo chmod -R 777 /var/www/`
->
+> 
 > **OBSERVAÇÃO MUITO IMPORTANTE:** só deve ser utilizado esse comando em ambiente de desenvolvimento, caso queira se aprofundar um pouco mais no assunto de permissões, sugiro que leia o seguinte texto:
->
+> 
 > <http://rberaldo.com.br/chmod-permissoes-em-sistemas-linux-e-unix-like/>
 
 O próximo passo é instalar o PHP, no mesmo terminal onde instalamos o Apache, digitamos o  seguinte comando:
@@ -52,7 +53,7 @@ Pronto, já temos o Apache e o PHP funcionando, agora o próximo passo é instal
 
 Esse comando irá instalar, além do MySQL o phpMyAdmin que é uma interface para interação com o MySQL feita em PHP que é uma ótima alternativa para criar bancos e tabelas e todas as hospedagens que utilizei até hoje usam o phpMyAdmin como padrão para gerenciar base de dados.
 
-A instalação do MySQL exige uma pequena interação para criarmos a senha do usuário root que acessa o banco de dados. Não vou entrar em detalhes de que devemos criar uma senha forte para o usuário root e etc&#8230; a intenção do post é outra, então utilizaremos a senha &#8220;**root**&#8220;, sem aspas, então, na primeira tela solicitada digitamos root, na tela seguinte repitimos a a senha, e é só aguardar a conclusão da instalação.
+A instalação do MySQL exige uma pequena interação para criarmos a senha do usuário root que acessa o banco de dados. Não vou entrar em detalhes de que devemos criar uma senha forte para o usuário root e etc... a intenção do post é outra, então utilizaremos a senha "**root**", sem aspas, então, na primeira tela solicitada digitamos root, na tela seguinte repetimos a a senha, e é só aguardar a conclusão da instalação.
 
 Para verificarmos se o MySQL foi instalado corretamente, basta acessar o nosso arquivo info.php, http://localhost/info.php, e procurarmos por MySQL
 
@@ -63,11 +64,11 @@ Para verificarmos se o MySQL foi instalado corretamente, basta acessar o nosso a
 Pronto, agora temos instalado nosso ambiente PHP x Linux com apenas 3 linhas de comando, muito fácil.
 
 > Edit
->
+> 
 > Pro PhpMyAdmin funcionar corretamente, precisamos criar um link simbólico apontando pra ele, dentro da pasta /var/www, digite o seguinte comando:
->
+> 
 > `ln -s /usr/share/phpmyadmin`
->
+> 
 > Agora sim, tudo funcionando.
 
 Até.

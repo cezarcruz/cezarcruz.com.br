@@ -7,8 +7,8 @@ categories:
   - Django
 tags:
   - Django
-
 ---
+
 Olás,  hoje mais uma dica curtinha: como navegar por um campo **manytomany** em um template **Django**.
 
 <!--more-->
@@ -18,7 +18,7 @@ Basta entendermos que o campo **manytomany** vem como um list, então a navegaç
 ```jsp
 {% for item in list_pedidos_abertos %}
    {% for serv in item.servicos.all %}
-	   <p>{{ serv.nome }}</p>
+       <p>{{ serv.nome }}</p>
    {% endfor %}
 {% endfor %}
 ```

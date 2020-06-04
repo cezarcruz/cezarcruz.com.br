@@ -18,12 +18,12 @@ Olás, no tutorial de hoje, vou mostrar como criar um diretiva bem simples utili
 
 Pré requisito:
 
-  * Angular JS;
-  * JQuery;
-  * JQuery Mask (<http://igorescobar.github.io/jQuery-Mask-Plugin/>);
-  * Tutorial [Hello Angular JS][1];
+* Angular JS;
+* JQuery;
+* JQuery Mask (<http://igorescobar.github.io/jQuery-Mask-Plugin/>);
+* Tutorial [Hello Angular JS][1];
 
-Para criar uma diretiva, devemos definir ela no módulo usando &#8220;directive&#8221; e passando uma function, que será a diretiva de fato:
+Para criar uma diretiva, devemos definir ela no módulo usando "directive" e passando uma function, que será a diretiva de fato:
 
 ```javascript
 angular.module("app").directive("phoneDir", PhoneDir);
@@ -55,14 +55,14 @@ function PhoneDir() {
 }
 ```
 
-  * Na primeira linha definimos a diretiva dando o nome de &#8220;phoneDir&#8221;, lembrando que o nome deve ser camel case;
-  * Na function é onde definimos a diretiva;
-  * Começamos sempre com um return;
-  * A chave link deve ser utilizada para diretivas que alteram o DOM;
-  * O &#8220;options&#8221; é um objeto utilizado para o JQuery, no caso, estamos definindo que quando temos um evento &#8220;onKeyPress&#8221; (quando teclamos algo), será executado a function putMask;
-  * Na primeira vez que a diretiva é executada já definimos uma valor inicial para a máscara e adicionamos o objeto &#8220;options&#8221; ao elemento para começarmos a termos uma ação sempre que é digitado algo no campo;
-  * Por fim a function que define qual mascara devemos utilizar: a simples de 8 dígitos ou a de 9 dígitos;
-  * Observação: a máscara é atualizada sempre que é digitado uma nova tecla;
+* Na primeira linha definimos a diretiva dando o nome de "phoneDir", lembrando que o nome deve ser camel case;
+* Na function é onde definimos a diretiva;
+* Começamos sempre com um return;
+* A chave link deve ser utilizada para diretivas que alteram o DOM;
+* O "options" é um objeto utilizado para o JQuery, no caso, estamos definindo que quando temos um evento "onKeyPress" (quando teclamos algo), será executado a function putMask;
+* Na primeira vez que a diretiva é executada já definimos uma valor inicial para a máscara e adicionamos o objeto "options" ao elemento para começarmos a termos uma ação sempre que é digitado algo no campo;
+* Por fim a function que define qual mascara devemos utilizar: a simples de 8 dígitos ou a de 9 dígitos;
+* Observação: a máscara é atualizada sempre que é digitado uma nova tecla;
 
 Com a diretiva pronta, é hora de utilizarmos ela em um campo de texto, o que é muito simples:
 
@@ -72,13 +72,11 @@ Com a diretiva pronta, é hora de utilizarmos ela em um campo de texto, o que é
 
 No elemento eu coloco a diretiva utilizando o seguinte padrão:
 
-  * Sempre letras minusculas;
-  * Quando a diretiva tiver um nome composto (phoneDir), no elemento html devemos colocar ela em minúsculo e onde tiver um letra maiúscula colocamos um hífen (-) (phone-dir);
+* Sempre letras minusculas;
+* Quando a diretiva tiver um nome composto (phoneDir), no elemento html devemos colocar ela em minúsculo e onde tiver um letra maiúscula colocamos um hífen (-) (phone-dir);
 
 Pronto, uma forma simples de criar uma diretiva AngularJS.
 
 Até a próxima.
 
-&nbsp;
-
- [1]: /hello-angular-js/
+[1]: /hello-angular-js/

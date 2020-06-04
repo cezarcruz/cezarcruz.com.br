@@ -7,8 +7,8 @@ categories:
   - Java
 tags:
   - Java
-
 ---
+
 Olás,
 
 hoje uma dica rápida pra navegarmos por uma classe java que contenha **enums**:

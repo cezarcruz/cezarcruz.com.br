@@ -4,12 +4,14 @@ author: Cezar Cruz
 date: 2013-06-20T13:11:04+00:00
 url: /tutorial-basico-usando-cakephp-windows-e-eclipse-parte-2/
 categories:
-  - PHP
-  - CakePHP
+- PHP
+- CakePHP
 tags:
-  - PHP
-  - CakePHP
+- PHP
+- CakePHP
+
 ---
+
 Continuando com a segunda parte do tutorial básico usando CakePHP, Windows e Eclipse.
 
 A primeira parte você encontra [aqui][1], paramos na tela em que é exibido uma mensagem de erro de conexão com o bando de dados no CakePHP, vamos lá.
@@ -27,27 +29,27 @@ Após renomear o arquivo, vamos configurar a conexão com a base de dados, procu
 ```php
 class DATABASE_CONFIG {
 
-	public $default = array(
-		'datasource' =>; 'Database/Mysql',
-		'persistent' =>; false,
-		'host' =>; 'localhost',
-		'login' =>; 'user',
-		'password' =>; 'password',
-		'database' =>; 'database_name',
-		'prefix' =>; '',
-		//'encoding' => 'utf8',
-	);
+    public $default = array(
+        'datasource' =>; 'Database/Mysql',
+        'persistent' =>; false,
+        'host' =>; 'localhost',
+        'login' =>; 'user',
+        'password' =>; 'password',
+        'database' =>; 'database_name',
+        'prefix' =>; '',
+        //'encoding' => 'utf8',
+    );
 
-	public $test = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
+    public $test = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'login' => 'user',
+        'password' => 'password',
+        'database' => 'test_database_name',
+        'prefix' => '',
+        //'encoding' => 'utf8',
+    );
 }
 ```
 
@@ -55,11 +57,10 @@ class DATABASE_CONFIG {
 
 Devemos alterar apenas o login, password e o database:
 
-&#8216;login&#8217; => &#8216;root&#8217;, &#8216;password&#8217; => &#8221;,
-
-&#8216;database&#8217; => &#8216;cake&#8217;
-
-&nbsp;
+```php
+'login' => 'root', 'password' => "",
+'database' => 'cake'
+```
 
 > Lembrando que os dados de conexão pode variar de instalação para instalação, porém, o padrão do Wamp é o que está acima
 
@@ -68,27 +69,27 @@ Por fim, seu código deve ficar assim:
 ```php
 class DATABASE_CONFIG {
 
-	public $default = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '',
-		'database' => 'cake',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
+    public $default = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'login' => 'root',
+        'password' => '',
+        'database' => 'cake',
+        'prefix' => '',
+        //'encoding' => 'utf8',
+    );
 
-	public $test = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
+    public $test = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'login' => 'user',
+        'password' => 'password',
+        'database' => 'test_database_name',
+        'prefix' => '',
+        //'encoding' => 'utf8',
+    );
 }
 ```
 
@@ -130,16 +131,14 @@ Na pasta controller, criaremos o arquivo HomeController.php.
 
 > Quando criamos um controller HomeController.php, queremos dizer ao CakePHP que envie as solicitações http://localhost/cake/home para ele
 
-Após criarmos o controller vamos editalo da seguinte forma:
-
-&nbsp;
+Após criarmos o controller vamos editá-lo da seguinte forma:
 
 ```php
 <?php
 class HomeController extends AppController{
-	public function index(){
+    public function index(){
 
-	}
+    }
 }
 ?>
 ```

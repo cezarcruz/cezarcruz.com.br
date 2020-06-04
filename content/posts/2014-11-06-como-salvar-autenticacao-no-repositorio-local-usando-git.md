@@ -8,6 +8,7 @@ categories:
 tags:
   - Git
 ---
+
 Uma dica bem curtinha, porém útil:
 
 Como configurar o git para não pedir senha ao baixar ou subir dados no repositório remoto, para isto, basta entrar no seu repositório local e digitar o comando abaixo:

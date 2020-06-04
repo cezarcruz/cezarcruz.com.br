@@ -1,16 +1,17 @@
 ---
+
 title: Criando um controller com Angular.JS utilizando padrões
 author: Cezar Cruz
 date: 2015-04-28T02:55:37+00:00
 url: /criando-um-controller-com-angular-js-utilizando-padroes/
 categories:
-  - JavaScript
-  - AngularJS
+    - JavaScript
+    - AngularJS
 tags:
-  - JavaScript
-  - AngularJS
-
+    - JavaScript
+    - AngularJS
 ---
+
 Ol<span class="st">ás</span>, hoje vamos ver como criar um Controller no Angular.JS utilizando [styleguide][1] criado pelo John Papa.
 
 <!--more-->
@@ -33,16 +34,16 @@ Na única linha acima, setamos o controller SeriadosCtrl no angular module com a
 
 ```js
 (function() {
-	/**
-	 * Controller do seriados.
-	 */
+    /**
+     * Controller do seriados.
+     */
 angular.module('app.seriado').controller('SeriadosCtrl', SeriadosCtrl);
 
-	SeriadosCtrl.$inject = ['$location', 'SeriadoService','$modal'];
+    SeriadosCtrl.$inject = ['$location', 'SeriadoService','$modal'];
 
-	function SeriadosCtrl($location, SeriadoService, $modal) {
+    function SeriadosCtrl($location, SeriadoService, $modal) {
 
-	}
+    }
 })();
 ```
 

@@ -7,7 +7,6 @@ url: /alguns-exemplos-de-streams-java-8/
 author: Cezar Cruz
 ---
 
-
 Olas, hoje iremos ver algumas formas básicas de utilizar a api de Stream do Java 8.
 
 <!--more-->
@@ -33,6 +32,7 @@ stringList.forEach(s -> {
     System.out.println(s);
 });
 ```
+
 No exemplo acima, podemos ler da seguinte forma:
 **para cada item s da lista stringList passamos um método que faz algo com s**
 
@@ -43,6 +43,7 @@ Em casos onde a ação é realizada com apenas 1 linha, podemos simplificar para
 ```java
 stringList.forEach(s -> System.out.println(s));
 ```
+
 Ou ainda:
 
 ```java
@@ -51,7 +52,7 @@ stringList.forEach(System.out::println);
 
 Lembre sempre da tipagem da lista e do seu método.
 
-Outra acao que pode ser feita utilizando a api de Streams e' filtrar uma lista utilizando o método *filter*, veja o exemplo abaixo:
+Outra ação que pode ser feita utilizando a api de Streams e' filtrar uma lista utilizando o método *filter*, veja o exemplo abaixo:
 
 ```java
 stringList.stream().filter((s -> s.equals("Brasil"))).forEach(System.out::println);

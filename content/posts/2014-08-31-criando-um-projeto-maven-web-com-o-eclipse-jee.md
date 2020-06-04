@@ -1,4 +1,5 @@
 ---
+
 title: Criando um projeto Maven web com o Eclipse JEE
 author: Cezar Cruz
 date: 2014-08-31T16:11:10+00:00
@@ -11,8 +12,8 @@ categories:
   - Maven
   - Eclipse
   - Java
-
 ---
+
 Olás, hoje vamos ver como criar um projeto java web utilizando [Olás, hoje vamos ver como criar um projeto java web utilizando][1] e Eclipse JEE/Tomcat.
 
 <!--more-->
@@ -29,13 +30,14 @@ File -> New -> Maven Project<figure id="attachment_398" style="width: 300px" cla
 
 Nessa tele devemos selecionar a opção **Create a simple project(skip archetype selection),** conforme a figura, em seguida clicar em next.<figure id="attachment_399" style="width: 300px" class="wp-caption aligncenter">
 
-[<img class="wp-image-399 size-medium" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_272,w_300/v1454457564/maven-new-project-description_ui33fj.png" alt="Novo projeto Maven - Descrição" width="300" height="271" />][3]<figcaption class="wp-caption-text">Novo projeto Maven &#8211; Descrição</figcaption></figure>
+[<img class="wp-image-399 size-medium" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_272,w_300/v1454457564/maven-new-project-description_ui33fj.png" alt="Novo projeto Maven - Descrição" width="300" height="271" />][3]<figcaption class="wp-caption-text">Novo projeto Maven - Descrição</figcaption></figure>
 
 Nessa tela temos as opções para identificar nosso projeto, devemos preencher as seguintes opções:
 
   *` (um identificador da empresa/grupo ao qual o projeto pertence. Geralmente o nome do site da empresa/grupo ao contrário) : **br.com.cezarcruz**
-  * Artifact ID (nome do projeto): **website**
-  * Packaging (como o projeto será empacotado, ex: jar, war, ear): **war**
+
+* Artifact ID (nome do projeto): **website**
+* Packaging (como o projeto será empacotado, ex: jar, war, ear): **war**
 
 > Pra conhecer um pouco mais acesse o link: <http://maven.apache.org/guides/mini/guide-naming-conventions.html>
 
@@ -47,16 +49,14 @@ Depois disso nosso projeto será criado com a seguinte estrutura:<figure id="att
 
 De cima pra baixo temo:
 
-  * Java Resources: é nessa pasta onde deve ficar o código java de nossa aplicação/site, ela usa uma estrutura própria para o **Maven**. A pasta é dividia em sub diretório:
-      * src/main/java: onde fica os packages e as classes java;
-      * src/main/resources: fica os arquivos de properties (ex: arquivos res, persistence.xml, configuração de logs);
-      * src/test/java: aqui onde fica os arquivos de teste unitários;
-      * src/test/resources: arquivos de propertires que são usado em **tempo de testes**.
-  * src/main: nessa pasta ficam uma cópia dos arquivos do src/main/java, mas exibidas como elas são exibidas na estrutura de pastas;
-      * webapp: essa é a pasta onde iram ficar os arquivos html/jsp/xhtml;
-  * pom.xml: pra um projeto **maven**, esse é o arquivo onde ficam todas as configurações pertinente a geração de build, testes, jars de terceiros, etc;
-
-&nbsp;
+* Java Resources: é nessa pasta onde deve ficar o código java de nossa aplicação/site, ela usa uma estrutura própria para o **Maven**. A pasta é dividia em sub diretório:
+  * src/main/java: onde fica os packages e as classes java;
+  * src/main/resources: fica os arquivos de properties (ex: arquivos res, persistence.xml, configuração de logs);
+  * src/test/java: aqui onde fica os arquivos de teste unitários;
+  * src/test/resources: arquivos de propertires que são usado em **tempo de testes**.
+* src/main: nessa pasta ficam uma cópia dos arquivos do src/main/java, mas exibidas como elas são exibidas na estrutura de pastas;
+  * webapp: essa é a pasta onde iram ficar os arquivos html/jsp/xhtml;
+* pom.xml: pra um projeto **maven**, esse é o arquivo onde ficam todas as configurações pertinente a geração de build, testes, jars de terceiros, etc;
 
 ## Ajustando configurações
 
@@ -76,26 +76,26 @@ Nele devemos adicionar uma configuração para que o **maven/eclipse** saiba qua
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>br.com.cezarcruz</groupId>
-	<artifactId>website</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<build>
-		<finalName>website</finalName>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>br.com.cezarcruz</groupId>
+    <artifactId>website</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
+    <build>
+        <finalName>website</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
 ```
 
@@ -117,16 +117,16 @@ Escolha a opção pra criar um arquivo xml. Clique em next:<figure id="attachmen
 
 Aqui, devemos reparar em duas coisas:
 
-  * O local do arquivo: foi acrescentado a subpasta **/WEB-INF**;
-  * O nome do arquivo tem que ser **web.xml**;
+* O local do arquivo: foi acrescentado a subpasta **/WEB-INF**;
+* O nome do arquivo tem que ser **web.xml**;
 
 Feito isso, clique em finish, será criando um arquivo xml vazio, apenas com o cabeçalho, devemos apagar e colocar o conteúdo abaixo:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" />
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" />
 ```
 
 > Os arquivos que ficam dentro de WEB-INF não é possível acessar pela rede.
@@ -145,7 +145,7 @@ Agora que nosso projeto está configurado, vamos criar nossa primeira página, p
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Olá mundo</h1>
+    <h1>Olá mundo</h1>
 </body>
 </html>
 ```

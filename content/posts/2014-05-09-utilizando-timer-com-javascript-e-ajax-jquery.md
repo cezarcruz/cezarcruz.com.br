@@ -10,7 +10,7 @@ tags:
 ---
 Olás,
 
-Hoje uma pequena dica de JavaScript / JQuery: Como fazer um &#8220;Ajax get&#8221; com timer.
+Hoje uma pequena dica de JavaScript / JQuery: Como fazer um "Ajax get" com timer.
 
 Vamos lá, depois de colocarmos as referencias necessárias para o JQuery, devemos utilizar o seguinte código:
 
@@ -48,7 +48,7 @@ Após a criação da função, devemos fazer a primeira chamada, pois quando uti
 
 A parte principal é o **setInterval(getData, 50000). **Aqui temos  a parte principal, que efetivamente irá fazer a requisição de tempos em tempos, nela devemos atentar a 2 fatos:
 
-  1. A função que será executada deve ser chamada sem o &#8220;()&#8221; (parênteses) no final;
+  1. A função que será executada deve ser chamada sem o "()" (parênteses) no final;
   2. O segundo parâmetro é o intervalo de tempo e milissegundos;
 
 Bom, é isso, espero que seja útil!! Até mais! =D

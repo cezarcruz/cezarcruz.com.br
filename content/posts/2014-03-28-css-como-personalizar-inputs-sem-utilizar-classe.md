@@ -1,14 +1,16 @@
 ---
+
 title: 'CSS: como personalizar inputs sem utilizar classe'
 author: Cezar Cruz
 date: 2014-03-28T19:23:34+00:00
 url: /css-como-personalizar-inputs-sem-utilizar-classe/
 categories:
-  - CSS
+    - CSS
 tags:
-  - CSS
+    - CSS
 ---
-Olás, vindo aqui hoje só pra manter o blog &#8220;ativo&#8221; heheh, hoje, uma dica bem simples de **css** pra personalizar <del>textbox</del> (mania de .net) inputs.
+
+Olás, vindo aqui hoje só pra manter o blog "ativo" heheh, hoje, uma dica bem simples de **css** pra personalizar <del>textbox</del> (mania de .net) inputs.
 
 O código é o seguinte:
 

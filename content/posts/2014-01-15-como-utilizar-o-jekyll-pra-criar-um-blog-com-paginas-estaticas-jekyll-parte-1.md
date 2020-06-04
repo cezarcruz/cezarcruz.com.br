@@ -1,14 +1,17 @@
 ---
+
 title: Como utilizar o Jekyll pra criar um blog com páginas estáticas. Jekyll parte 1
 author: Cezar Cruz
 date: 2014-01-16T00:40:15+00:00
 url: /como-utilizar-o-jekyll-pra-criar-um-blog-com-paginas-estaticas-jekyll-parte-1/
 categories:
-  - Jekyll
+    - Jekyll
 tags:
-  - Jekyll
+    - Jekyll
+
 ---
-**Jekyll**, um software para gerar páginas estáticas usado principalmente pra blogs. Esse tutorial é a primeira parte. O **Jekyll** é um software gerador de páginas estáticas. Usando arquivos de texto com [Markdown][1], ele cria um site completo, estático, pronto pra ser publicado. A vantagem de gerar um blog, ou um site em html estático, é que não precisamos nos preocupar com muitas camadas de segurança, considerando que eliminamos o interpretador PHP, no caso do WordPress, eliminamos o próprio WordPress, que apesar de ser uma ótima plataforma de blog, pode conter bugs, eliminamos também a necessidade de um servidor de banco de dados (falow MySql 😉 ), e claro,  o desempenho, como só é exibido páginas estáticas, são menos requisições e nada pra processar e pra hospedar apenas páginas estáticas é muito mais barato e até &#8220;di grátis&#8221; hehehehe.
+
+**Jekyll**, um software para gerar páginas estáticas usado principalmente pra blogs. Esse tutorial é a primeira parte. O **Jekyll** é um software gerador de páginas estáticas. Usando arquivos de texto com [Markdown][1], ele cria um site completo, estático, pronto pra ser publicado. A vantagem de gerar um blog, ou um site em html estático, é que não precisamos nos preocupar com muitas camadas de segurança, considerando que eliminamos o interpretador PHP, no caso do WordPress, eliminamos o próprio WordPress, que apesar de ser uma ótima plataforma de blog, pode conter bugs, eliminamos também a necessidade de um servidor de banco de dados (falow MySql 😉 ), e claro,  o desempenho, como só é exibido páginas estáticas, são menos requisições e nada pra processar e pra hospedar apenas páginas estáticas é muito mais barato e até "di grátis" hehehehe.
 
 <!--more-->
 
@@ -24,7 +27,7 @@ Isso já é o suficiente pra instalar o Ruby no ubuntu. Pra verificar se instalo
 
 `ruby --version`
 
-E o resultado é a versão do Ruby instalado&#8230; 😉 Agora que temos o Ruby funcionando, vamos instalar o **Jekyll**, o comando, claro, é bem simples:
+E o resultado é a versão do Ruby instalado... 😉 Agora que temos o Ruby funcionando, vamos instalar o **Jekyll**, o comando, claro, é bem simples:
 
 `gem install jekyll`
 
@@ -38,19 +41,23 @@ Ele irá criar a estrutura padrão de diretórios do **Jekyll**, ela deve ficar 
 
 [<img class="size-medium wp-image-264 aligncenter" alt="arvore_de_diretorio_jekyll" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_193,w_300/v1454457572/arvore_de_diretorio_jekyll_kqae0n.png" width="300" height="192" />][2]
 
-  * Os arquivos **_config.yml** é onde ficam as configurações do blog, como o nome do blog, por exemplo;
-  * A pasta **css** é onde fica os arquivos de estilo;
-  * A pasta **_layouts** é onde fica o layout padrão de cada página, mais pra frente, veremos como ele é utilizado;
-  * A pasta **_posts** é onde fica os posts do nosso blog;
+* Os arquivos **_config.yml** é onde ficam as configurações do blog, como o nome do blog, por exemplo;
+* A pasta **css** é onde fica os arquivos de estilo;
+* A pasta **_layouts** é onde fica o layout padrão de cada página, mais pra frente, veremos como ele é utilizado;
+* A pasta **_posts** é onde fica os posts do nosso blog;
 
 Por enquanto esses são os diretórios essenciais para começarmos a conhecer melhor nosso blog. Pra rodarmos ele localmente e ver como ficou, devemos, de dentro da pasta blog, rodar o comando abaixo:
 
 `jekyll serve`
 
-Ele irá disponibilizar um modo &#8220;preview&#8221; do blog no endereço http://localhost:4000, assim podemos ver como irá ficar nosso blog com o layout padrão do **jekyll**. Além disso, é claro, ele irá gerar uma build, as páginas html, dentro da pasta _site. O resultado final é a página abaixo: [<img class="size-medium wp-image-265 aligncenter" alt="pagina_inicial_utilizando_o_layout_padrao_do_jekyll" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_179,w_300/v1454457571/pagina_inicial_utilizando_o_layout_padrao_do_jekyll_kqxcae.png" width="300" height="178" />][3] Nos próximos tutorias irei explicar como criar um post, personalizar o blog, otimizar o SEO e o que for surgindo. Links úteis:
+Ele irá disponibilizar um modo "preview" do blog no endereço http://localhost:4000, assim podemos ver como irá ficar nosso blog com o layout padrão do **jekyll**. Além disso, é claro, ele irá gerar uma build, as páginas html, dentro da pasta _site. O resultado final é a página abaixo:
 
-  * [Site oficial do Jekyll][4] (A documentação é bem completa);
-  * [Site oficila do Ruby][5];
+<img class="size-medium wp-image-265 aligncenter" alt="pagina_inicial_utilizando_o_layout_padrao_do_jekyll" src="http://res.cloudinary.com/cezarcruz-com-br/image/upload/h_179,w_300/v1454457571/pagina_inicial_utilizando_o_layout_padrao_do_jekyll_kqxcae.png" width="300" height="178" />
+
+Nos próximos tutorias irei explicar como criar um post, personalizar o blog, otimizar o SEO e o que for surgindo. Links úteis:
+
+* [Site oficial do Jekyll][4] (A documentação é bem completa);
+* [Site oficila do Ruby][5];
 
  [1]: http://daringfireball.net/projects/markdown/syntax
  [2]: http://res.cloudinary.com/cezarcruz-com-br/image/upload/v1454457572/arvore_de_diretorio_jekyll_kqae0n.png

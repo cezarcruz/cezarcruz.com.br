@@ -30,7 +30,7 @@ Após abrir um novo terminal, o primeiro comando que podemos utilizar é o help:
 sdk help
 ```
 
-Este comando irá listar os comando disponíveis do SDKMAN. Com isso confirmamos que a entalação ocorreu com sucesso, o próximo passo é instalar o Jaava:
+Este comando irá listar os comando disponíveis do SDKMAN. Com isso confirmamos que a entalação ocorreu com sucesso, o próximo passo é instalar o Java:
 
 ```
 sdk install java

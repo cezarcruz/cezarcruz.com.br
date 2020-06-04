@@ -13,7 +13,7 @@ Olá, neste post veremos como incluindo o MapStruct em uma aplicação Java.
 
 Qual é o problema?
 
-Nas aplicações atuais estamos acostumados a criar "camadas": controllers, services, repositories, DAO, etc. Normalmente, separamos nossa request de dados do que é salvo no banco, com isso temos o famoso DTO e nossas Entidades (JPA). O DTO fica no controller e as entidades são gerenciadas pelo repositório ou DAO, para que isso funcione, temos que converter o DTO antes de salvar no nosso banco de dados, para isso existem algumas formas de fazer, mas todas são massantes.
+Nas aplicações atuais estamos acostumados a criar "camadas": *controllers, services, repositories, DAO*, etc. Normalmente, separamos nossa request de dados do que é salvo no banco, com isso temos o famoso DTO e nossas Entidades (JPA). O DTO fica no controller e as entidades são gerenciadas pelo repositório ou DAO, para que isso funcione, temos que converter o DTO antes de salvar no nosso banco de dados, para isso existem algumas formas de fazer, mas todas são massantes.
 
 O que é o MapStruct e como ele pode resolver este problema?
 
@@ -77,6 +77,7 @@ private List<EnderecoRequest> enderecos;
 ```
 
 EnderecoRequest.java
+
 ```java
 private String rua;
 private Integer numero;
@@ -84,6 +85,7 @@ private String cidade;
 ```
 
 PessoaResponse.class
+
 ```java
 private String nome;
 private Integer idade;
@@ -91,6 +93,7 @@ private List<EnderecoResponse> enderecos
 ```
 
 EnderecoResponse.class
+
 ```java
 private String logradouro;
 private String numero;
@@ -105,11 +108,12 @@ Implementar os mappers
 Agora que temos nossa aplicação configurada e nossos POJOs, podemos iniciar a implementação.
 Ela pode ser feita de duas formas: Implementando em uma Interface ou uma classe Abstrata.
 
-> Normalmente devemos utilizar Interfaces e, caso precise de algum método extra, criamos um método "default", em casos mais especifitos (injetar um bean do Spring, por exemplo), podemos utilizar classes abstratas.
+> Normalmente devemos utilizar Interfaces e, caso precise de algum método extra, criamos um método "default", em casos mais específicos (injetar um bean do Spring, por exemplo), podemos utilizar classes abstratas.
 
 Iremos começar pela classe Endereço:
 
 EnderecoMapper.java
+
 ```java
 @Mapper(componentModel = "spring")
 public interface EnderecoMapper {
@@ -123,12 +127,11 @@ public interface EnderecoMapper {
  List<EnderecoResponse> deRequest(final List<EnderecoRequest> enderecoRequests);
   List<EnderecoRequest> deResponse(final List<EnderecoResponse> enderecoResponses);
 }
-
 ```
 
 **@Mapper** é utilizado para dizermos que esta interface é um mapper, a opção "componentModel" foi utilizada para dizer ao MapStruct que deve ser criar um "Bean" do spring para que possamos utilizar a Injeção de Dependencia do Spring. A configuração "componentModel" é opcional
 
-**@Mapping** é utilizado para deixar explícito a conversão. Quando o nome das propriedades estão iguais o próprio MapStruct infere, mas quando está diferente, precisa ser especificado a origem e o destino, existem outra possibilidades, mas vamos explorar apenas o básico. Repare que o campo número são de tipos diferentes, o proprio MapStruct consegue fazer as conversões, é bem útil e ainda é possível especificar a conversão manualmente.
+**@Mapping** é utilizado para deixar explícito a conversão. Quando o nome das propriedades estão iguais o próprio MapStruct infere, mas quando está diferente, precisa ser especificado a origem e o destino, existem outra possibilidades, mas vamos explorar apenas o básico. Repare que o campo número são de tipos diferentes, o próprio MapStruct consegue fazer as conversões, é bem útil e ainda é possível especificar a conversão manualmente.
 
 **@InheritInverseConfiguration** faz a configuração inversa da conversão, deve ser utilizado quando existe um mapper com algum tipo de configuração específica.
 
@@ -216,8 +219,8 @@ public class EnderecoMapperImpl implements EnderecoMapper {
        return list;
    }
 }
-
 ```
+
 > Observe que ele sabe lidar com valores nulos e incluiu anotações do  Spring
 
 Veja como fica o mapper da classe Pessoa
@@ -262,7 +265,6 @@ public class PessoaMapperImpl implements PessoaMapper {
        return pessoaResponse;
    }
 }
-
 ```
 
 E com nossa conversão pronta basta utilizarmos:
@@ -279,6 +281,7 @@ public class ConversorService {
  }
 }
 ```
+
 Pronto.
 
 É possível incluir mais configurações ou fazer alguma implementação para executar antes ou depois de uma conversão, vemos isso em outros posts.

@@ -4,10 +4,11 @@ author: Cezar Cruz
 date: 2013-09-09T18:26:46+00:00
 url: /pegando-valores-via-url-get-usando-csharp-ou-vb-net/
 categories:
-  - NET
+    - NET
 tags:
-  - NET
+    - NET
 ---
+
 Dica rápida pra pegar valores (GET) em urls em ASP .NET:
 
 Temos o seguinte link:

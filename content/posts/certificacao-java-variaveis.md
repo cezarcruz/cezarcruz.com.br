@@ -14,7 +14,7 @@ Neste post veremos como são criadas e utilizadas as variáveis em uma aplicaç�
 
 Uma variável é um nome definido pelo programador ao qual se associa um valor pertencente a um certo tipo de dados e armazenado em um conjunto de posições da memória do computador. Basicamente, toda variável sempre possui um nome, um tipo e um conteúdo.
 
-O nome de uma variável, em Java, pode ser formado por uma letra, pelos caracteres _ (*underscore*), ou $ (cifrão). Nomes não podem conter outros símbolos gráficos, operadores ou espaços em branco, podendo ser longos, embora apenas os primeiros 32 caracteres sejam usados para distinguir. Lembrando que Java é *Case Sensitive*, letras minusculas e maiusculas são consideradas diferentes. Exemplos válidos:
+O nome de uma variável, em Java, pode ser formado por uma letra, pelos caracteres _ (*underscore*), ou $ (cifrão). Nomes não podem conter outros símbolos gráficos, operadores ou espaços em branco, podendo ser longos, embora apenas os primeiros 32 caracteres sejam usados para distinguir. Lembrando que Java é *Case Sensitive*, letras minusculas e maiúsculas são consideradas diferentes. Exemplos válidos:
 
 * a
 * outro
@@ -35,7 +35,7 @@ O Java possui um conjunto de palavras que indicam os nomes dos tipos primitivos,
 
 *abstract*, *assert*, *boolean*, *break*, *byte*, *case*, *catch*, *class*, *continue*, *default*, *do*, *double*, *else*, *enum*, *extends*, *false*, *final*, *finally*, *float*, *for*, *if*, *implements*, *import*, *instanceof*, *int*, *interface*, *long*, *native*, *new*, *null*, *package*, *private*, *protected*, *public*, *return*, *short*, *static*, *strictfp*, *super*, *switch*, *synchronized*, *this*, *throw*, *throws*, *transient*, *true*, *try*, *void*, *volatile*, *while*
 
-false e true não são palavras reservadas, mas valores literais do tipo boolean. Do mesmo modo, null é o literal nulo. Além dos citados, existem outras duas que, embora sejam reservadas, nao sao utilizadas pela linguagem: *const* e *goto*.
+false e true não são palavras reservadas, mas valores literais do tipo boolean. Do mesmo modo, null é o literal nulo. Além dos citados, existem outras duas que, embora sejam reservadas, não são utilizadas pela linguagem: *const* e *goto*.
 
 Declarar uma variável é associar um tipo, um nome e um valor. Para isso deve ser observada a sintaxe:
 
@@ -43,7 +43,7 @@ Declarar uma variável é associar um tipo, um nome e um valor. Para isso deve s
 <Tipo> <nome1> [, nome2 [, nome3 [..., nomeN]]];
 ```
 
-A especificação de um Tipo e ao menos um nome sao obrigatorios. Pode seguir opcionalmente uma lista de nomes, todos separados por vírgulas. A declaração é terminado por ; (ponto e vírgula). O Tipo pode ser um tipo primitivo, uma classe da API Java ou outra definida pelo programador. Exemplos:
+A especificação de um Tipo e ao menos um nome são obrigatórios. Pode seguir opcionalmente uma lista de nomes, todos separados por vírgulas. A declaração é terminado por ; (ponto e vírgula). O Tipo pode ser um tipo primitivo, uma classe da API Java ou outra definida pelo programador. Exemplos:
 
 ```java
 int i;
@@ -108,7 +108,7 @@ Escopo.java:16: error: cannot find symbol
 1 error
 ```
 
-A mensagem indica que na linha 16 do arquivo Escopo.java foi detectado um simbolo desconhecido (variavel j), pois, de fato, naquele escopo, (bloco 1 ou mais externos) não existe essa variável. Para corrigir o erro, a declaração da variável j deve ser movida para o início do bloco onde ocorreu o erro:
+A mensagem indica que na linha 16 do arquivo Escopo.java foi detectado um simbolo desconhecido (variável j), pois, de fato, naquele escopo, (bloco 1 ou mais externos) não existe essa variável. Para corrigir o erro, a declaração da variável j deve ser movida para o início do bloco onde ocorreu o erro:
 
 ```java
 public class Escopo { // inicio do bloco0

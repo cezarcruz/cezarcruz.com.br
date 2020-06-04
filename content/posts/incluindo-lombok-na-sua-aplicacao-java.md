@@ -90,8 +90,7 @@ public class PessoaLombok {
 ```
 
 A anotação [@Value](https://projectlombok.org/features/Value) gera vários códigos:
-toString(), equal(), hashCode(), construtor com todos as propriedades, métodos getter. Obs: O @Value gera classes imutáveis, dessa forma não é possivel utilizar os famosos métodos Setters, para criar classes mutáveis, deve ser utilizada a anotação [@Data](https://projectlombok.org/features/Data).
-
+toString(), equal(), hashCode(), construtor com todos as propriedades, métodos getter. Obs: O @Value gera classes imutáveis, dessa forma não é possível utilizar os famosos métodos Setters, para criar classes mutáveis, deve ser utilizada a anotação [@Data](https://projectlombok.org/features/Data).
 
 ## Incluindo no nosso projeto.
 
@@ -101,16 +100,16 @@ Como nem tudo são flores, o primeiro passo é incluir o plugin do lombok em nos
 
 [Intellij](https://projectlombok.org/setup/intellij)
 
-O proxímo passo é incluir a dependência no nosso pom.xml:
+O próximo passo é incluir a dependência no nosso pom.xml:
 
 ```xml
 <dependencies>
-	<dependency>
-		<groupId>org.projectlombok</groupId>
-		<artifactId>lombok</artifactId>
-		<version>1.18.8</version>
-		<scope>provided</scope>
-	</dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.8</version>
+        <scope>provided</scope>
+    </dependency>
 </dependencies>
 ```
 
@@ -132,7 +131,7 @@ https://projectlombok.org/features/all
 Os exemplos utilizados nesse post pode ser encontrados aqui:
 https://github.com/cezarcruz/codigos-do-site/tree/master/exemplos-lombok
 
-Não tenha medo de utilizar o lombok, existem ferramentas capaz de remover o código lombok e gerar as classes como antigamente, mas incluido o lombok no projeto e visto os beneficios, acho dificil voltar.
+Não tenha medo de utilizar o lombok, existem ferramentas capaz de remover o código lombok e gerar as classes como antigamente, mas incluído o lombok no projeto e visto os benefícios, acho dificil voltar.
 
 Qualquer duvida, deixe uma mensagem no chat abaixo.
 Abraços.

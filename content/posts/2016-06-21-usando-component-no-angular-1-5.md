@@ -7,7 +7,7 @@ categories:
     - Javascript
     - AngularJS
 tags:
-    - Javascrip
+    - Javascript
     - AngularJS
 ---
 

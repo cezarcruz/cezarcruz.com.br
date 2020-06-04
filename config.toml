@@ -19,7 +19,7 @@ disqusShortname = "cezarcruz"
     description = "um blog sobre programação"
     dateformat = "2 Jan 2006"
     post_meta = ["author", "date", "categories"]
-    opengraph = false # Enable OpenGraph if true
+    opengraph = true # Enable OpenGraph if true
 
 [Taxonomies]
     tag = "tags"

@@ -20,6 +20,7 @@ disqusShortname = "cezarcruz"
     dateformat = "2 Jan 2006"
     post_meta = ["author", "date", "categories"]
     opengraph = true # Enable OpenGraph if true
+    images = ["img/header_og.png"]
 
 [Taxonomies]
     tag = "tags"

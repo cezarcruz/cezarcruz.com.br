@@ -8,7 +8,7 @@ url: /testes-parametrizados-com-junit-5/
 images: ["img/header_java_og.png"]
 ---
 
-Com a versão mais recente do Junit ficou muito simples de fazer testes "parametrizados", onde, com apenas um método, é possivel fazer testes em vários cenários.
+Com a versão mais recente do Junit ficou muito simples de fazer testes "parametrizados", onde, com apenas um método, é possível fazer testes em vários cenários.
 
 <!--more-->
 
@@ -29,7 +29,7 @@ Inicialmente a dependência do Junit em seu projeto deve estar assim:
 </dependency>
 ```
 
-Com a dependência correta, o nosso primeiro teste ja pode ser escrito:
+Com a dependência correta, o nosso primeiro teste já pode ser escrito:
 
 ```java
 @ParameterizedTest
@@ -46,12 +46,12 @@ Com a dependência correta, o nosso primeiro teste ja pode ser escrito:
 * **@CsvSource** recebe um array de valores em formato "CSV".
 * Repare que nosso teste é anotado com **@ParameterizedTest**.
 * O método tem duas entradas que representam os valores separados por ",".
-* Também é possivel fazer o teste usando um arquivo ".csv"
-    * @CsvFileSource(resources = "arquivo.csv", numLinesToSkip = 1)
+* Também é possível fazer o teste usando um arquivo ".csv"
+  * @CsvFileSource(resources = "arquivo.csv", numLinesToSkip = 1)
     * **resouces**: é o nome do arquivo
-    * **numLinesToSkip**: arquivos csv iniciando com o cabeçalho na primeira linha, se esse for o caso, esse parmetro diz para pulgar a primeira linha, ou o número de linhas passado como valor.
+    * **numLinesToSkip**: arquivos csv iniciando com o cabeçalho na primeira linha, se esse for o caso, esse parâmetro diz para pular a primeira linha, ou o número de linhas passado como valor.
 
-O método é executado 3 vezes, cada uma passando os valores por linhas, e caso tenha algum erro em um dos cenários, o junit mostra qual deles deu erro:
+O método é executado 3 vezes, cada uma passando os valores por linhas, e caso tenha algum erro em um dos cenários, o Junit mostra qual deles deu erro:
 
 ```java
 @ParameterizedTest
@@ -66,6 +66,7 @@ public void deveChecarValor(final String input, final String expected) {
 ```
 
 Resultado:
+
 ```java
 org.opentest4j.AssertionFailedError:
 Expected :AYY
@@ -87,16 +88,14 @@ public void numerosPares(final Integer input) {
 ```
 
 * **@ValueSource** recebe o tipo e um array com os valores
-    * Os tipos podem ser:
-        * ints
-        * strings
-        * booleans
-        * byte
-        * char
-        * double
-        * short
-        * etc....
+  * Os tipos podem ser:
+    * ints
+    * strings
+    * booleans
+    * byte
+    * char
+    * double
+    * short
+    * etc....
 
 A ideia é a mesma do **@CsvSource** mas recebendo apenas um valor.
-
-

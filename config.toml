@@ -21,6 +21,10 @@ disqusShortname = "cezarcruz"
     post_meta = ["author", "date", "categories"]
     opengraph = true # Enable OpenGraph if true
     images = ["img/header_og.png"]
+    pager = true
+
+[Params.style.vars]
+    fontFamilyPrimary = "Ubuntu, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
 
 [Taxonomies]
     tag = "tags"

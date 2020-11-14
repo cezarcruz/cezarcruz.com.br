@@ -1,0 +1,31 @@
+<style>
+
+</style>
+
+<div class="lgpd" id="lgpd" style="display: none;">
+  <div>
+    <p>
+      Ao continuar neste site, você aceita nossa <a href="/politica-de-privacidade/">política de privacidade</a>.
+    </p>
+    <a role="button" class="btn" id="close" onclick="fechaLgpd();">OK</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  const obtemLgdpElement = () => document.getElementById('lgpd');
+
+  const showLgpd = () => obtemLgdpElement().style.display = 'block';
+
+  const fechaLgpd = () => {
+    obtemLgdpElement().remove();
+    localStorage.setItem('lgpd', true);
+  }
+
+  window.addEventListener('load', () => {
+    const lgpdAceito = localStorage.getItem('lgpd');
+    if (!lgpdAceito) {
+      showLgpd();
+    }
+  });
+</script>

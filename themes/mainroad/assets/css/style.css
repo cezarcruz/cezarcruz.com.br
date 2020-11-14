@@ -1180,6 +1180,32 @@ textarea {
 	text-decoration: underline;
 }
 
+.lgpd {
+	display: block;
+	margin: 0 auto;
+	background-color: white;
+	font-size: 24px;
+	text-align: center;
+	z-index: 9;
+	position: fixed;
+	bottom: 75px;
+	left: 0;
+	right: 0;
+	width: 500px;
+	height: 140px;
+	border-radius: 4px;
+	border: solid 1px red;
+	color: black;
+}
+
+.lgpd > div > p > a {
+	color: red;
+}
+
+.btn {
+	cursor: pointer;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1475px) {
 	.container--outer {
@@ -1312,5 +1338,10 @@ textarea {
 		display: block;
 		font-size: 11px;
 		font-size: .6875rem;
+	}
+
+	.lgpd {
+		width: 90%;
+		height: 180px;
 	}
 }

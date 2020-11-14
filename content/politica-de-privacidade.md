@@ -1,5 +1,5 @@
 ---
-title: Políticas de Privacidade
+title: Política de Privacidade
 author: Cezar Cruz
 date: 2020-11-11T12:06:14+00:00
 menu: "footer"

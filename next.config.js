@@ -1,5 +1,5 @@
-const whitImages = require('next-images');
+const withImages = require('next-images');
 
-module.exports = whitImages({
-  esModule: true
+module.exports = withImages({
+  esModule: true,
 });

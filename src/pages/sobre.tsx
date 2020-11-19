@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Container from '../layout/Container';
 
-const Home: React.FC = () => {
+const Sobre: React.FC = () => {
   return (
     <div>
       <Head>
@@ -11,11 +11,11 @@ const Home: React.FC = () => {
 
       <main>
         <Container>
-          <h1>Oi</h1>
+          <h1>Sobre</h1>
         </Container>
       </main>
     </div>
   );
 }
 
-export default Home;
+export default Sobre;

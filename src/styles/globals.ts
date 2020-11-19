@@ -12,4 +12,8 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text};
     font-family: ${props => props.theme.font}
   }
+
+  a {
+    text-decoration: none;
+  }
 `

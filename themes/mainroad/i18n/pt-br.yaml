@@ -64,7 +64,7 @@
 # Footer
 - id: footer_credits
   translation:
-    "Gerado com <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> com o tema \
+    "Gerado com <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> e \
     <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
 
 # 404
